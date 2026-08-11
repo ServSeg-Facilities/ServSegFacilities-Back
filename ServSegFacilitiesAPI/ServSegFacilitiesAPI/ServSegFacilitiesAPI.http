@@ -1,0 +1,6 @@
+@ServSegFacilitiesAPI_HostAddress = http://localhost:5080
+
+GET {{ServSegFacilitiesAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
