@@ -1,5 +1,10 @@
 using DotNetEnv;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi;
+using ServSegFacilitiesAPI.Application.Services;
+using ServSegFacilitiesAPI.Contexts;
+using ServSegFacilitiesAPI.Interfaces;
+using ServSegFacilitiesAPI.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -50,16 +55,24 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 //// Registrar DbContext com a conexão SQL Server scaffolded
-//builder.Services.AddDbContext<ChamaJussaContext>(options =>
-//    options.UseSqlServer(connectionString));
+builder.Services.AddDbContext<ServSeg_FacilitiesContext>(options =>
+    options.UseSqlServer(connectionString));
 
+// Registro de injeção de dependencia de DI
+// Repositories
+ builder.Services.AddScoped<ITipoRegistro, TipoRegistroRepository>();
+
+// Services
+ builder.Services.AddScoped<TipoRegistroService>();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();

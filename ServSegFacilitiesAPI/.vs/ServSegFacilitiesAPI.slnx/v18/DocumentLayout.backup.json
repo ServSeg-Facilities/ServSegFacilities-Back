@@ -1,26 +1,62 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\",
+  "WorkspaceRootPath": "C:\\Users\\58069799897\\Desktop\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Contexts\\ServSeg_FacilitiesContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ServSegFacilitiesAPI\\Contexts\\ServSeg_FacilitiesContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\58069799897\\desktop\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\repositories\\tiporegistrorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\repositories\\tiporegistrorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BF1D78D-37F7-4CCA-AF29-65E03908CAA3}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\kauec\\onedrive\\documentos\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\servsegfacilitiesapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{7BF1D78D-37F7-4CCA-AF29-65E03908CAA3}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\servsegfacilitiesapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\58069799897\\desktop\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BF1D78D-37F7-4CCA-AF29-65E03908CAA3}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\kauec\\onedrive\\documentos\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BF1D78D-37F7-4CCA-AF29-65E03908CAA3}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\58069799897\\desktop\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\application\\services\\tiporegistroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\application\\services\\tiporegistroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BF1D78D-37F7-4CCA-AF29-65E03908CAA3}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\kauec\\onedrive\\documentos\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\.env.example||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{7BF1D78D-37F7-4CCA-AF29-65E03908CAA3}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\.env.example||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\58069799897\\desktop\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\controllers\\tiporegistrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\controllers\\tiporegistrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BF1D78D-37F7-4CCA-AF29-65E03908CAA3}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\kauec\\onedrive\\documentos\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{7BF1D78D-37F7-4CCA-AF29-65E03908CAA3}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\58069799897\\desktop\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\dtos\\tiporegistrodto\\listartiporegistrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\dtos\\tiporegistrodto\\listartiporegistrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\58069799897\\desktop\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\application\\regras\\validar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\application\\regras\\validar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\58069799897\\desktop\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\interfaces\\itiporegistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\interfaces\\itiporegistro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\58069799897\\desktop\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\exceptions\\domainexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\exceptions\\domainexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\58069799897\\desktop\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\dtos\\tiporegistrodto\\atualizartiporegistrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\dtos\\tiporegistrodto\\atualizartiporegistrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\58069799897\\desktop\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\dtos\\tiporegistrodto\\adicionartiporegistrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\dtos\\tiporegistrodto\\adicionartiporegistrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\58069799897\\desktop\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\contexts\\servseg_facilitiescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\contexts\\servseg_facilitiescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\58069799897\\desktop\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\.env.example||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\.env.example||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\58069799897\\desktop\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\58069799897\\desktop\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\servsegfacilitiesapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\servsegfacilitiesapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,76 +66,185 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ServSeg_FacilitiesContext.cs",
-              "DocumentMoniker": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Contexts\\ServSeg_FacilitiesContext.cs",
-              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Contexts\\ServSeg_FacilitiesContext.cs",
-              "ToolTip": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Contexts\\ServSeg_FacilitiesContext.cs",
-              "RelativeToolTip": "ServSegFacilitiesAPI\\Contexts\\ServSeg_FacilitiesContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "TipoRegistroController.cs",
+              "DocumentMoniker": "C:\\Users\\58069799897\\Desktop\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Controllers\\TipoRegistroController.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Controllers\\TipoRegistroController.cs",
+              "ToolTip": "C:\\Users\\58069799897\\Desktop\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Controllers\\TipoRegistroController.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\Controllers\\TipoRegistroController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAowDQAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-11T17:16:50.682Z",
+              "WhenOpened": "2026-08-12T13:04:49.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Validar.cs",
+              "DocumentMoniker": "C:\\Users\\58069799897\\Desktop\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Application\\Regras\\Validar.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Application\\Regras\\Validar.cs",
+              "ToolTip": "C:\\Users\\58069799897\\Desktop\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Application\\Regras\\Validar.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\Application\\Regras\\Validar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T12:21:36.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DomainException.cs",
+              "DocumentMoniker": "C:\\Users\\58069799897\\Desktop\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Exceptions\\DomainException.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Exceptions\\DomainException.cs",
+              "ToolTip": "C:\\Users\\58069799897\\Desktop\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Exceptions\\DomainException.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\Exceptions\\DomainException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T12:10:41.519Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "TipoRegistroService.cs",
+              "DocumentMoniker": "C:\\Users\\58069799897\\Desktop\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Application\\Services\\TipoRegistroService.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Application\\Services\\TipoRegistroService.cs",
+              "ToolTip": "C:\\Users\\58069799897\\Desktop\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Application\\Services\\TipoRegistroService.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\Application\\Services\\TipoRegistroService.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAswDwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T11:29:04.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ListarTipoRegistroDto.cs",
+              "DocumentMoniker": "C:\\Users\\58069799897\\Desktop\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\TipoRegistroDto\\ListarTipoRegistroDto.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\DTOs\\TipoRegistroDto\\ListarTipoRegistroDto.cs",
+              "ToolTip": "C:\\Users\\58069799897\\Desktop\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\TipoRegistroDto\\ListarTipoRegistroDto.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\DTOs\\TipoRegistroDto\\ListarTipoRegistroDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T11:52:10.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AtualizarTipoRegistroDto.cs",
+              "DocumentMoniker": "C:\\Users\\58069799897\\Desktop\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\TipoRegistroDto\\AtualizarTipoRegistroDto.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\DTOs\\TipoRegistroDto\\AtualizarTipoRegistroDto.cs",
+              "ToolTip": "C:\\Users\\58069799897\\Desktop\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\TipoRegistroDto\\AtualizarTipoRegistroDto.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\DTOs\\TipoRegistroDto\\AtualizarTipoRegistroDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T11:51:50.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AdicionarTipoRegistroDto.cs",
+              "DocumentMoniker": "C:\\Users\\58069799897\\Desktop\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\TipoRegistroDto\\AdicionarTipoRegistroDto.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\DTOs\\TipoRegistroDto\\AdicionarTipoRegistroDto.cs",
+              "ToolTip": "C:\\Users\\58069799897\\Desktop\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\TipoRegistroDto\\AdicionarTipoRegistroDto.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\DTOs\\TipoRegistroDto\\AdicionarTipoRegistroDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T11:51:25.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TipoRegistroRepository.cs",
+              "DocumentMoniker": "C:\\Users\\58069799897\\Desktop\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Repositories\\TipoRegistroRepository.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Repositories\\TipoRegistroRepository.cs",
+              "ToolTip": "C:\\Users\\58069799897\\Desktop\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Repositories\\TipoRegistroRepository.cs*",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\Repositories\\TipoRegistroRepository.cs*",
+              "ViewState": "AgIAABIAAAAAAAAAAAAwwBgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T11:27:53.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ITipoRegistro.cs",
+              "DocumentMoniker": "C:\\Users\\58069799897\\Desktop\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Interfaces\\ITipoRegistro.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Interfaces\\ITipoRegistro.cs",
+              "ToolTip": "C:\\Users\\58069799897\\Desktop\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Interfaces\\ITipoRegistro.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\Interfaces\\ITipoRegistro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T11:27:33.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ServSeg_FacilitiesContext.cs",
+              "DocumentMoniker": "C:\\Users\\58069799897\\Desktop\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Contexts\\ServSeg_FacilitiesContext.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Contexts\\ServSeg_FacilitiesContext.cs",
+              "ToolTip": "C:\\Users\\58069799897\\Desktop\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Contexts\\ServSeg_FacilitiesContext.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\Contexts\\ServSeg_FacilitiesContext.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-11T17:16:50.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\58069799897\\Desktop\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Program.cs",
               "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\58069799897\\Desktop\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Program.cs",
               "RelativeToolTip": "ServSegFacilitiesAPI\\Program.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAADgAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-11T16:35:49.804Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": ".env.example",
-              "DocumentMoniker": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\.env.example",
+              "DocumentMoniker": "C:\\Users\\58069799897\\Desktop\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\.env.example",
               "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\.env.example",
-              "ToolTip": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\.env.example",
+              "ToolTip": "C:\\Users\\58069799897\\Desktop\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\.env.example",
               "RelativeToolTip": "ServSegFacilitiesAPI\\.env.example",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-08-11T16:24:00.308Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-11T16:24:00.308Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": ".env",
-              "DocumentMoniker": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\.env",
+              "DocumentMoniker": "C:\\Users\\58069799897\\Desktop\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\.env",
               "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\.env",
-              "ToolTip": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\.env",
+              "ToolTip": "C:\\Users\\58069799897\\Desktop\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\.env",
               "RelativeToolTip": "ServSegFacilitiesAPI\\.env",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-08-11T16:23:50.503Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-11T16:23:50.503Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ServSegFacilitiesAPI",
-              "DocumentMoniker": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj",
+              "DocumentIndex": 13,
+              "Title": "ServSegFacilitiesAPI.csproj",
+              "DocumentMoniker": "C:\\Users\\58069799897\\Desktop\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj",
               "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj",
-              "ToolTip": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj",
+              "ToolTip": "C:\\Users\\58069799897\\Desktop\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj",
               "RelativeToolTip": "ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-08-11T16:21:57.676Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{c6f34f0d-7ae5-4f3a-be61-fe0c21ae9eb8}"
+              "WhenOpened": "2026-08-11T16:21:57.676Z"
             }
           ]
         }
