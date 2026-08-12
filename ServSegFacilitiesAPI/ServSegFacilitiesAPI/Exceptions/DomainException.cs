@@ -5,3 +5,4 @@
         public DomainException(string mensagem) : base(mensagem) { }
     }
 }
+
