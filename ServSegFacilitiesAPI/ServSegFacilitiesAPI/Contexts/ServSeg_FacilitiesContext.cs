@@ -36,7 +36,7 @@ public partial class ServSeg_FacilitiesContext : DbContext
     {
         modelBuilder.Entity<cargo>(entity =>
         {
-            entity.HasKey(e => e.cargoId).HasName("PK__cargo__7E9F06A53A67EC41");
+            entity.HasKey(e => e.cargoId).HasName("PK__cargo__7E9F06A5F3217C11");
 
             entity.Property(e => e.nomeCargo)
                 .HasMaxLength(50)
@@ -45,9 +45,9 @@ public partial class ServSeg_FacilitiesContext : DbContext
 
         modelBuilder.Entity<empresa>(entity =>
         {
-            entity.HasKey(e => e.empresaId).HasName("PK__empresa__C0E6707914CA982A");
+            entity.HasKey(e => e.empresaId).HasName("PK__empresa__C0E67079ABCF5DEF");
 
-            entity.HasIndex(e => e.cnpj, "UQ__empresa__35BD3E48360B4CCD").IsUnique();
+            entity.HasIndex(e => e.cnpj, "UQ__empresa__35BD3E4815CB5328").IsUnique();
 
             entity.Property(e => e.bairro)
                 .HasMaxLength(100)
@@ -90,7 +90,7 @@ public partial class ServSeg_FacilitiesContext : DbContext
 
         modelBuilder.Entity<localizacaoEmpresa>(entity =>
         {
-            entity.HasKey(e => e.localizacaoEmpresaId).HasName("PK__localiza__B3AFECF8C9B92E9B");
+            entity.HasKey(e => e.localizacaoEmpresaId).HasName("PK__localiza__B3AFECF8F6116F7B");
 
             entity.Property(e => e.latitude)
                 .HasMaxLength(15)
@@ -108,7 +108,7 @@ public partial class ServSeg_FacilitiesContext : DbContext
 
         modelBuilder.Entity<registroPonto>(entity =>
         {
-            entity.HasKey(e => e.registroPontoId).HasName("PK__registro__F46A4ACF4EB2DBA4");
+            entity.HasKey(e => e.registroPontoId).HasName("PK__registro__F46A4ACFCAF8A068");
 
             entity.Property(e => e.dataHoraPonto)
                 .HasDefaultValueSql("(getdate())")
@@ -133,7 +133,7 @@ public partial class ServSeg_FacilitiesContext : DbContext
 
         modelBuilder.Entity<tipoRegistro>(entity =>
         {
-            entity.HasKey(e => e.tipoRegistroId).HasName("PK__tipoRegi__2058F4DC41643959");
+            entity.HasKey(e => e.tipoRegistroId).HasName("PK__tipoRegi__2058F4DC4AA1AF96");
 
             entity.Property(e => e.nomeTipoRegistro)
                 .HasMaxLength(30)
@@ -142,9 +142,9 @@ public partial class ServSeg_FacilitiesContext : DbContext
 
         modelBuilder.Entity<usuario>(entity =>
         {
-            entity.HasKey(e => e.usuarioId).HasName("PK__usuario__A5B1AB8EAA2C136A");
+            entity.HasKey(e => e.usuarioId).HasName("PK__usuario__A5B1AB8EBE597D05");
 
-            entity.HasIndex(e => e.email, "UQ__usuario__AB6E6164554833CC").IsUnique();
+            entity.HasIndex(e => e.email, "UQ__usuario__AB6E61648939949E").IsUnique();
 
             entity.Property(e => e.email)
                 .HasMaxLength(150)

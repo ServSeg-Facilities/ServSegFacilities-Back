@@ -1,22 +1,74 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\",
+  "WorkspaceRootPath": "C:\\Users\\48705777801\\Desktop\\Reposit\u00F3rios Github\\ServSegFacilities\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7BF1D78D-37F7-4CCA-AF29-65E03908CAA3}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\kauec\\onedrive\\documentos\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\servsegfacilitiesapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{7BF1D78D-37F7-4CCA-AF29-65E03908CAA3}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\servsegfacilitiesapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\48705777801\\desktop\\reposit\u00F3rios github\\servsegfacilities\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\controllers\\autenticacaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\controllers\\autenticacaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BF1D78D-37F7-4CCA-AF29-65E03908CAA3}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\kauec\\onedrive\\documentos\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BF1D78D-37F7-4CCA-AF29-65E03908CAA3}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\48705777801\\desktop\\reposit\u00F3rios github\\servsegfacilities\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\dtos\\autenticacaodto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\dtos\\autenticacaodto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BF1D78D-37F7-4CCA-AF29-65E03908CAA3}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\kauec\\onedrive\\documentos\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\.env.example||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{7BF1D78D-37F7-4CCA-AF29-65E03908CAA3}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\.env.example||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\48705777801\\desktop\\reposit\u00F3rios github\\servsegfacilities\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\dtos\\autenticacaodto\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\dtos\\autenticacaodto\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BF1D78D-37F7-4CCA-AF29-65E03908CAA3}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\kauec\\onedrive\\documentos\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{7BF1D78D-37F7-4CCA-AF29-65E03908CAA3}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\48705777801\\desktop\\reposit\u00F3rios github\\servsegfacilities\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\application\\services\\autenticacaoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\application\\services\\autenticacaoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\48705777801\\desktop\\reposit\u00F3rios github\\servsegfacilities\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\application\\autenticacao\\geradortokenjwt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\application\\autenticacao\\geradortokenjwt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\48705777801\\desktop\\reposit\u00F3rios github\\servsegfacilities\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\48705777801\\desktop\\reposit\u00F3rios github\\servsegfacilities\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\48705777801\\desktop\\reposit\u00F3rios github\\servsegfacilities\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\48705777801\\desktop\\reposit\u00F3rios github\\servsegfacilities\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\application\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\application\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\48705777801\\desktop\\reposit\u00F3rios github\\servsegfacilities\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\exceptions\\domainexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\exceptions\\domainexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\48705777801\\desktop\\reposit\u00F3rios github\\servsegfacilities\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\dtos\\usuariodto\\usuariocriardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\dtos\\usuariodto\\usuariocriardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\48705777801\\desktop\\reposit\u00F3rios github\\servsegfacilities\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\dtos\\usuariodto\\usuarioresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\dtos\\usuariodto\\usuarioresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\48705777801\\desktop\\reposit\u00F3rios github\\servsegfacilities\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\48705777801\\desktop\\reposit\u00F3rios github\\servsegfacilities\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\contexts\\servseg_facilitiescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\contexts\\servseg_facilitiescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\48705777801\\desktop\\reposit\u00F3rios github\\servsegfacilities\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\interfaces\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\interfaces\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\48705777801\\desktop\\reposit\u00F3rios github\\servsegfacilities\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\48705777801\\desktop\\reposit\u00F3rios github\\servsegfacilities\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\servsegfacilitiesapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\servsegfacilitiesapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,63 +78,227 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Program.cs",
-              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Program.cs",
-              "RelativeToolTip": "ServSegFacilitiesAPI\\Program.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-11T16:35:49.804Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c6f34f0d-7ae5-4f3a-be61-fe0c21ae9eb8}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": ".env.example",
-              "DocumentMoniker": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\.env.example",
-              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\.env.example",
-              "ToolTip": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\.env.example",
-              "RelativeToolTip": "ServSegFacilitiesAPI\\.env.example",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-08-11T16:24:00.308Z",
+              "DocumentIndex": 0,
+              "Title": "AutenticacaoController.cs",
+              "DocumentMoniker": "C:\\Users\\48705777801\\Desktop\\Reposit\u00F3rios Github\\ServSegFacilities\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Controllers\\AutenticacaoController.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Controllers\\AutenticacaoController.cs",
+              "ToolTip": "C:\\Users\\48705777801\\Desktop\\Reposit\u00F3rios Github\\ServSegFacilities\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Controllers\\AutenticacaoController.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\Controllers\\AutenticacaoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T13:03:41.376Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": ".env",
-              "DocumentMoniker": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\.env",
-              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\.env",
-              "ToolTip": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\.env",
-              "RelativeToolTip": "ServSegFacilitiesAPI\\.env",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-08-11T16:23:50.503Z",
+              "Title": "AutenticacaoService.cs",
+              "DocumentMoniker": "C:\\Users\\48705777801\\Desktop\\Reposit\u00F3rios Github\\ServSegFacilities\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Application\\Services\\AutenticacaoService.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Application\\Services\\AutenticacaoService.cs",
+              "ToolTip": "C:\\Users\\48705777801\\Desktop\\Reposit\u00F3rios Github\\ServSegFacilities\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Application\\Services\\AutenticacaoService.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\Application\\Services\\AutenticacaoService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAgwDoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T12:58:58.042Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ServSegFacilitiesAPI",
-              "DocumentMoniker": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj",
-              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj",
-              "ToolTip": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj*",
-              "RelativeToolTip": "ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-08-11T16:21:57.676Z",
+              "DocumentIndex": 2,
+              "Title": "TokenDto.cs",
+              "DocumentMoniker": "C:\\Users\\48705777801\\Desktop\\Reposit\u00F3rios Github\\ServSegFacilities\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\AutenticacaoDto\\TokenDto.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\DTOs\\AutenticacaoDto\\TokenDto.cs",
+              "ToolTip": "C:\\Users\\48705777801\\Desktop\\Reposit\u00F3rios Github\\ServSegFacilities\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\AutenticacaoDto\\TokenDto.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\DTOs\\AutenticacaoDto\\TokenDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T12:57:17.747Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{c6f34f0d-7ae5-4f3a-be61-fe0c21ae9eb8}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\48705777801\\Desktop\\Reposit\u00F3rios Github\\ServSegFacilities\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\AutenticacaoDto\\LoginDto.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\DTOs\\AutenticacaoDto\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\48705777801\\Desktop\\Reposit\u00F3rios Github\\ServSegFacilities\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\AutenticacaoDto\\LoginDto.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\DTOs\\AutenticacaoDto\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T12:56:42.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GeradorTokenJwt.cs",
+              "DocumentMoniker": "C:\\Users\\48705777801\\Desktop\\Reposit\u00F3rios Github\\ServSegFacilities\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Application\\Autenticacao\\GeradorTokenJwt.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Application\\Autenticacao\\GeradorTokenJwt.cs",
+              "ToolTip": "C:\\Users\\48705777801\\Desktop\\Reposit\u00F3rios Github\\ServSegFacilities\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Application\\Autenticacao\\GeradorTokenJwt.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\Application\\Autenticacao\\GeradorTokenJwt.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T12:22:09.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\48705777801\\Desktop\\Reposit\u00F3rios Github\\ServSegFacilities\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\48705777801\\Desktop\\Reposit\u00F3rios Github\\ServSegFacilities\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\appsettings.json",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-12T12:09:13.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UsuarioResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\48705777801\\Desktop\\Reposit\u00F3rios Github\\ServSegFacilities\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\UsuarioDto\\UsuarioResponseDto.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\DTOs\\UsuarioDto\\UsuarioResponseDto.cs",
+              "ToolTip": "C:\\Users\\48705777801\\Desktop\\Reposit\u00F3rios Github\\ServSegFacilities\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\UsuarioDto\\UsuarioResponseDto.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\DTOs\\UsuarioDto\\UsuarioResponseDto.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAgAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T11:35:02.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\48705777801\\Desktop\\Reposit\u00F3rios Github\\ServSegFacilities\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\48705777801\\Desktop\\Reposit\u00F3rios Github\\ServSegFacilities\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T11:30:58.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\48705777801\\Desktop\\Reposit\u00F3rios Github\\ServSegFacilities\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Repositories\\UsuarioRepository.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Repositories\\UsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\48705777801\\Desktop\\Reposit\u00F3rios Github\\ServSegFacilities\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Repositories\\UsuarioRepository.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\Repositories\\UsuarioRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T11:22:22.42Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\48705777801\\Desktop\\Reposit\u00F3rios Github\\ServSegFacilities\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Program.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\48705777801\\Desktop\\Reposit\u00F3rios Github\\ServSegFacilities\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Program.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\Program.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T11:10:23.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IUsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\48705777801\\Desktop\\Reposit\u00F3rios Github\\ServSegFacilities\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Interfaces\\IUsuarioRepository.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Interfaces\\IUsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\48705777801\\Desktop\\Reposit\u00F3rios Github\\ServSegFacilities\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Interfaces\\IUsuarioRepository.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\Interfaces\\IUsuarioRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T11:21:14.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UsuarioService.cs",
+              "DocumentMoniker": "C:\\Users\\48705777801\\Desktop\\Reposit\u00F3rios Github\\ServSegFacilities\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Application\\Services\\UsuarioService.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Application\\Services\\UsuarioService.cs",
+              "ToolTip": "C:\\Users\\48705777801\\Desktop\\Reposit\u00F3rios Github\\ServSegFacilities\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Application\\Services\\UsuarioService.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\Application\\Services\\UsuarioService.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAkwHEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T11:39:37.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DomainException.cs",
+              "DocumentMoniker": "C:\\Users\\48705777801\\Desktop\\Reposit\u00F3rios Github\\ServSegFacilities\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Exceptions\\DomainException.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Exceptions\\DomainException.cs",
+              "ToolTip": "C:\\Users\\48705777801\\Desktop\\Reposit\u00F3rios Github\\ServSegFacilities\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Exceptions\\DomainException.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\Exceptions\\DomainException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T11:42:39.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UsuarioCriarDto.cs",
+              "DocumentMoniker": "C:\\Users\\48705777801\\Desktop\\Reposit\u00F3rios Github\\ServSegFacilities\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\UsuarioDto\\UsuarioCriarDto.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\DTOs\\UsuarioDto\\UsuarioCriarDto.cs",
+              "ToolTip": "C:\\Users\\48705777801\\Desktop\\Reposit\u00F3rios Github\\ServSegFacilities\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\UsuarioDto\\UsuarioCriarDto.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\DTOs\\UsuarioDto\\UsuarioCriarDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T11:35:41.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ServSeg_FacilitiesContext.cs",
+              "DocumentMoniker": "C:\\Users\\48705777801\\Desktop\\Reposit\u00F3rios Github\\ServSegFacilities\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Contexts\\ServSeg_FacilitiesContext.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Contexts\\ServSeg_FacilitiesContext.cs",
+              "ToolTip": "C:\\Users\\48705777801\\Desktop\\Reposit\u00F3rios Github\\ServSegFacilities\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Contexts\\ServSeg_FacilitiesContext.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\Contexts\\ServSeg_FacilitiesContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T11:14:37.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": ".env",
+              "DocumentMoniker": "C:\\Users\\48705777801\\Desktop\\Reposit\u00F3rios Github\\ServSegFacilities\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\.env",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\.env",
+              "ToolTip": "C:\\Users\\48705777801\\Desktop\\Reposit\u00F3rios Github\\ServSegFacilities\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\.env",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\.env",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-08-12T11:10:31.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ServSegFacilitiesAPI.http",
+              "DocumentMoniker": "C:\\Users\\48705777801\\Desktop\\Reposit\u00F3rios Github\\ServSegFacilities\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI.http",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\ServSegFacilitiesAPI.http",
+              "ToolTip": "C:\\Users\\48705777801\\Desktop\\Reposit\u00F3rios Github\\ServSegFacilities\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI.http",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\ServSegFacilitiesAPI.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-08-12T11:10:22.788Z"
             }
           ]
         }
