@@ -5,22 +5,22 @@ namespace ServSegFacilitiesAPI.Application.Convertions
 {
     public static class EmpresaParaDTO
     {
-        public static empresa converterEmpresaParaDto(CriarEmpresaDTO empresa, EstabelecimentoDTO estabelecimento, CidadeDTO cidade, EstadoDTO estado, Bairro)
+        public static empresa converterEmpresaParaDto(CriarEmpresaDTO empresa)
         {
             empresa empresaRet = new empresa
             {
-                cnpj = empresa.Cnpj_Raiz,
-                razaoSocial = empresa.Razao_Social,
-                nomeFantasia = empresa.Nome_Fantasia,
-                telefone = estabelecimento.Telefone1,
-                email = estabelecimento.Email,
-                cep = estabelecimento.Cep,
-                logradouro = estabelecimento.Logradouro,
-                numero = estabelecimento.Numero,
-                complemento = estabelecimento.Complemento,
-                bairro = estabelecimento.Bairro,
-                cidade = cidade.Nome,
-                estado = estado.Nome
+                cnpj = empresa.cnpj,
+                razaoSocial = empresa.razaoSocial,
+                nomeFantasia = empresa.nomeFantasia,
+                telefone = empresa.telefone,
+                email = empresa.email,
+                cep = empresa.cep,
+                logradouro = empresa.logradouro,
+                numero = empresa.numero,
+                complemento = empresa.complemento,
+                bairro = empresa.bairro,
+                cidade = empresa.cidade,
+                estado = empresa.estado
             };
 
             return empresaRet;

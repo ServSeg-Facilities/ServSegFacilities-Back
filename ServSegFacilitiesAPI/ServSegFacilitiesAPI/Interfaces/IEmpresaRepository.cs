@@ -6,6 +6,8 @@ namespace ServSegFacilitiesAPI.Interfaces
     {
         List<empresa> Listar();
         empresa ObterPorId(int id);
+        empresa ObterPorCNPJ(string cnpj);
+        empresa ObterPorRazaoSocial(string nome);
         void CriarEmpresa(empresa empresa);
         void AtualizarEmpresa(int id, empresa empresa);
     }

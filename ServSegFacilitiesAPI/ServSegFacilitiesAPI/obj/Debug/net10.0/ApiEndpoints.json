@@ -11,6 +11,22 @@
   },
   {
     "ContainingType": "ServSegFacilitiesAPI.Controllers.EmpresaController",
+    "Method": "ObterEmpresaPorCNPJ",
+    "RelativePath": "api/Empresa/{cnpj}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cnpj",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServSegFacilitiesAPI.Controllers.EmpresaController",
     "Method": "CriarEmpresa",
     "RelativePath": "api/Empresa/{cnpj}",
     "HttpMethod": "POST",
@@ -62,6 +78,22 @@
       {
         "Name": "id",
         "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServSegFacilitiesAPI.Controllers.EmpresaController",
+    "Method": "ObterEmpresaPorRazaoSocial",
+    "RelativePath": "api/Empresa/{razaoSocial}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "razaoSocial",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],

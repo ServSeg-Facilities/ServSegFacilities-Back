@@ -48,6 +48,34 @@ namespace ServSegFacilitiesAPI.Controllers
             }
         }
 
+        [HttpGet ("{cnpj}")]
+        public IActionResult ObterEmpresaPorCNPJ(string cnpj)
+        {
+            try
+            {
+                var empresa = _empresaService.ObterPorCNPJ(cnpj);
+                return Ok(empresa);
+            }
+            catch (DomainException ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
+
+        [HttpGet ("{razaoSocial}")]
+        public IActionResult ObterEmpresaPorRazaoSocial(string razaoSocial)
+        {
+            try
+            {
+                var empresa = _empresaService.ObterPorRazaoSocial(razaoSocial);
+                return Ok(empresa);
+            }
+            catch (DomainException ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
+
         [HttpPost ("{cnpj}")]
         public async Task<IActionResult> CriarEmpresa(string cnpj)
         {

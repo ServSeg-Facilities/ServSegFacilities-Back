@@ -1,8 +1,10 @@
 
 CREATE DATABASE ServSeg_Facilities;
 GO
+
 USE ServSeg_Facilities
 GO
+
 CREATE TABLE usuario (
   usuarioId INT PRIMARY KEY IDENTITY(1, 1),
   nome VARCHAR(100) NOT NULL,
