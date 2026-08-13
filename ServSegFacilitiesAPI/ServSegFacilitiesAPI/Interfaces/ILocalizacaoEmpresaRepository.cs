@@ -5,7 +5,7 @@ namespace ServSegFacilitiesAPI.Interfaces
     public interface ILocalizacaoEmpresaRepository
     {
         localizacaoEmpresa ObterPorLocalizacaoEmpresaId(int empresaId);
-        void AdicionarLocalizacaoEmpresa(int empresaId, localizacaoEmpresa localizacaoEmpresa);
+        void AdicionarLocalizacaoEmpresa(localizacaoEmpresa localizacaoEmpresa);
         void AtualizarLocalizacaoEmpresa(int empresaId, localizacaoEmpresa localizacaoEmpresa);
     }
 }

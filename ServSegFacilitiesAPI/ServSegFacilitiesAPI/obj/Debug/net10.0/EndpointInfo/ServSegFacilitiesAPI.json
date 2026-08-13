@@ -15,6 +15,35 @@
             "description": "OK"
           }
         }
+      },
+      "post": {
+        "tags": [
+          "Empresa"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
       }
     },
     "/api/Empresa/EmpresaId/{id}": {
@@ -84,28 +113,6 @@
         }
       }
     },
-    "/api/Empresa/{cnpj}": {
-      "post": {
-        "tags": [
-          "Empresa"
-        ],
-        "parameters": [
-          {
-            "name": "cnpj",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/api/Empresa/{id}": {
       "patch": {
         "tags": [
@@ -144,6 +151,136 @@
             "application/*+json": {
               "schema": {
                 "$ref": "#/components/schemas/AtualizarEmpresaDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/LocalizacaoEmpresa/EmpresaId/{id}": {
+      "get": {
+        "tags": [
+          "LocalizacaoEmpresa"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ListarLocalizacaoEmpresaDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ListarLocalizacaoEmpresaDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ListarLocalizacaoEmpresaDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/LocalizacaoEmpresa": {
+      "post": {
+        "tags": [
+          "LocalizacaoEmpresa"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CriarLocalizacaoEmpresaDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CriarLocalizacaoEmpresaDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CriarLocalizacaoEmpresaDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CriarLocalizacaoEmpresaDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CriarLocalizacaoEmpresaDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CriarLocalizacaoEmpresaDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/LocalizacaoEmpresa/AtualizarLocalizacaoEmpresa{empresaId}": {
+      "patch": {
+        "tags": [
+          "LocalizacaoEmpresa"
+        ],
+        "parameters": [
+          {
+            "name": "empresaId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarLocalizacaoEmpresaDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarLocalizacaoEmpresaDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarLocalizacaoEmpresaDTO"
               }
             }
           }
@@ -211,6 +348,88 @@
           }
         },
         "additionalProperties": false
+      },
+      "AtualizarLocalizacaoEmpresaDTO": {
+        "type": "object",
+        "properties": {
+          "latitude": {
+            "type": "string",
+            "nullable": true
+          },
+          "longitude": {
+            "type": "string",
+            "nullable": true
+          },
+          "precisao": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CoordinatesDTO": {
+        "type": "object",
+        "properties": {
+          "longitude": {
+            "type": "string",
+            "nullable": true
+          },
+          "latitude": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CriarLocalizacaoEmpresaDTO": {
+        "type": "object",
+        "properties": {
+          "empresaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "location": {
+            "$ref": "#/components/schemas/LocationDTO"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ListarLocalizacaoEmpresaDTO": {
+        "type": "object",
+        "properties": {
+          "localizacaoEmpresaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "empresaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "latitude": {
+            "type": "string",
+            "nullable": true
+          },
+          "longitude": {
+            "type": "string",
+            "nullable": true
+          },
+          "precisao": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LocationDTO": {
+        "type": "object",
+        "properties": {
+          "coordinates": {
+            "$ref": "#/components/schemas/CoordinatesDTO"
+          }
+        },
+        "additionalProperties": false
       }
     },
     "securitySchemes": {
@@ -230,6 +449,9 @@
   "tags": [
     {
       "name": "Empresa"
+    },
+    {
+      "name": "LocalizacaoEmpresa"
     }
   ]
 }

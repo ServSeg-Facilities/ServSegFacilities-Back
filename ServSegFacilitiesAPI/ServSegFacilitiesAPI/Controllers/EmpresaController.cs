@@ -76,8 +76,8 @@ namespace ServSegFacilitiesAPI.Controllers
             }
         }
             
-        [HttpPost ("{cnpj}")]
-        public async Task<IActionResult> CriarEmpresa(string cnpj)
+        [HttpPost]
+        public async Task<IActionResult> CriarEmpresa([FromBody] string cnpj)
         {
             try
             {

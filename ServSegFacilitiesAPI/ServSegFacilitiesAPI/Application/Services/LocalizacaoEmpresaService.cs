@@ -30,12 +30,12 @@ namespace ServSegFacilitiesAPI.Application.Services
             };
         }
 
-        public void AdicionarLocalizacaoEmpresa(int empresaId, CriarLocalizacaoEmpresaDTO localizacaoEmpresa)
+        public void AdicionarLocalizacaoEmpresa(CriarLocalizacaoEmpresaDTO localizacaoEmpresa)
         {
             if (localizacaoEmpresa.Location.Coordinates.Latitude == null || localizacaoEmpresa.Location.Coordinates.Longitude == null)
                 throw new DomainException("Localização não cadastrada! preencha todos os campos.");
 
-            _localizacaoRepo.AdicionarLocalizacaoEmpresa(empresaId, LocalizacaoEmpresaParaDTO.ConverterLocalizacaoParaDto(localizacaoEmpresa));
+            _localizacaoRepo.AdicionarLocalizacaoEmpresa(LocalizacaoEmpresaParaDTO.ConverterLocalizacaoParaDto(localizacaoEmpresa));
         }
 
         public void AtualizarLocalizacaoEmpresa(int empresaId, AtualizarLocalizacaoEmpresaDTO localizacaoEmpresa)

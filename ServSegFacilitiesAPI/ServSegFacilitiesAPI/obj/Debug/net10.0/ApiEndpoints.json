@@ -12,7 +12,7 @@
   {
     "ContainingType": "ServSegFacilitiesAPI.Controllers.EmpresaController",
     "Method": "CriarEmpresa",
-    "RelativePath": "api/Empresa/{cnpj}",
+    "RelativePath": "api/Empresa",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -98,5 +98,78 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServSegFacilitiesAPI.Controllers.LocalizacaoEmpresaController",
+    "Method": "AdicionarLocalizacaoEmpresa",
+    "RelativePath": "api/LocalizacaoEmpresa",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "locDto",
+        "Type": "ServSegFacilitiesAPI.DTOs.LocalizacaoEmpresaDTO.CriarLocalizacaoEmpresaDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ServSegFacilitiesAPI.DTOs.LocalizacaoEmpresaDTO.CriarLocalizacaoEmpresaDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ServSegFacilitiesAPI.Controllers.LocalizacaoEmpresaController",
+    "Method": "AtualizarLocalizacaoEmpresa",
+    "RelativePath": "api/LocalizacaoEmpresa/AtualizarLocalizacaoEmpresa{empresaId}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empresaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "locDto",
+        "Type": "ServSegFacilitiesAPI.DTOs.LocalizacaoEmpresaDTO.AtualizarLocalizacaoEmpresaDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServSegFacilitiesAPI.Controllers.LocalizacaoEmpresaController",
+    "Method": "ObterPorLocalizacaoEmpresaId",
+    "RelativePath": "api/LocalizacaoEmpresa/EmpresaId/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ServSegFacilitiesAPI.DTOs.LocalizacaoEmpresaDTO.ListarLocalizacaoEmpresaDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

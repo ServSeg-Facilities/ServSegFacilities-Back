@@ -17,7 +17,7 @@ namespace ServSegFacilitiesAPI.Repositories
             return _context.localizacaoEmpresa.Find(id);
         }
 
-        public void AdicionarLocalizacaoEmpresa(int empresaId, localizacaoEmpresa localizacaoEmpresa)
+        public void AdicionarLocalizacaoEmpresa(localizacaoEmpresa localizacaoEmpresa)
         {
             _context.localizacaoEmpresa.Add(localizacaoEmpresa);
             _context.SaveChanges();

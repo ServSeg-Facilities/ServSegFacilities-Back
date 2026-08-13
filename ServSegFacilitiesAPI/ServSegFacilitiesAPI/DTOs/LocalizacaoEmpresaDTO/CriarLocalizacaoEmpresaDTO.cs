@@ -6,6 +6,8 @@ namespace ServSegFacilitiesAPI.DTOs.LocalizacaoEmpresaDTO
 
     public class CriarLocalizacaoEmpresaDTO
     {
+        public int empresaId { get; set; }
+
         [JsonPropertyName("location")]
         public LocationDTO Location { get; set; } = null!;
     }
