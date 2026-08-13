@@ -5,18 +5,23 @@ using ServSegFacilitiesAPI.Application.Convertions;
 using ServSegFacilitiesAPI.Controllers;
 using ServSegFacilitiesAPI.Domains;
 using ServSegFacilitiesAPI.DTOs.EmpresaDTO;
+using ServSegFacilitiesAPI.DTOs.LocalizacaoEmpresaDTO;
 using ServSegFacilitiesAPI.Exceptions;
 using ServSegFacilitiesAPI.Interfaces;
+using System.Net;
+using System.Runtime.ConstrainedExecution;
 
 namespace ServSegFacilitiesAPI.Application.Services
 {
     public class EmpresaService
     {
         private readonly IEmpresaRepository _empresaRepository;
+        private readonly ILocalizacaoEmpresaRepository _localizacaoEmpresaRepository;
 
-        public EmpresaService(IEmpresaRepository empresaRepository)
+        public EmpresaService(IEmpresaRepository empresaRepository, ILocalizacaoEmpresaRepository localizacaoEmpresaRepository)
         {
             _empresaRepository = empresaRepository;
+            _localizacaoEmpresaRepository = localizacaoEmpresaRepository;
         }
 
         public List<empresa> ListarEmpresas()
@@ -65,15 +70,22 @@ namespace ServSegFacilitiesAPI.Application.Services
             client.DefaultRequestHeaders.Add("Accept-Language", "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7");
 
             cnpj = cnpj.Replace(".", "").Replace("/", "").Replace("-", "");
+            if (_empresaRepository.ObterPorCNPJ(cnpj) != null)
+                throw new DomainException("Empresa já cadastrada");
 
             // Execulta o end point.
             var response = await client.GetAsync($"https://brasilapi.com.br/api/cnpj/v1/{cnpj}");
-
             var empresaDTO = await response.Content.ReadFromJsonAsync<CriarEmpresaDTO>();
             if (empresaDTO == null)
                 throw new DomainException("Não foi possível consultar o CNPJ.");
 
             empresa empresa = EmpresaParaDTO.converterEmpresaParaDto(empresaDTO);
+
+            var cep = empresa.cep;
+            if (cep == null)
+                throw new DomainException("Não foi possível consultar o CNPJ.");
+            cep = cep.Replace("-", "").Replace(".", "").Trim();
+
 
             empresa.cnpj = cnpj;
             empresa.nomeFantasia = String.IsNullOrWhiteSpace(empresa.nomeFantasia) ? empresa.razaoSocial : empresa.nomeFantasia;
@@ -84,6 +96,24 @@ namespace ServSegFacilitiesAPI.Application.Services
             }
 
             _empresaRepository.CriarEmpresa(empresa);
+
+            var responseLat = await client.GetAsync($"https://brasilapi.com.br/api/cep/v2/{cep}");
+            if (response.IsSuccessStatusCode)
+            {
+                var empresaId = _empresaRepository.ObterPorCNPJ(cnpj).empresaId;
+                if (responseLat.IsSuccessStatusCode)
+                {
+                    CriarLocalizacaoEmpresaDTO locDto = await responseLat.Content.ReadFromJsonAsync<CriarLocalizacaoEmpresaDTO>();
+                    _localizacaoEmpresaRepository.AdicionarLocalizacaoEmpresa(new localizacaoEmpresa
+                    {
+                        empresaId = empresaId,
+                        latitude = locDto.Location.Coordinates.Latitude,
+                        longitude = locDto.Location.Coordinates.Longitude,
+                        precisao = 100,
+                    });
+                }
+            }
+
             return response.Headers.Location ?? new Uri($"https://brasiilapi.com.br/cnpj/v1/{cnpj}");
         }
 

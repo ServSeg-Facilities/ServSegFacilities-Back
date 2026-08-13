@@ -64,6 +64,7 @@ builder.Services.AddDbContext<ServSeg_FacilitiesContext>(options =>
 builder.Services.AddScoped<IRegistroPonto, RegistroPontoRepository>();
 builder.Services.AddScoped<ICargoRepository, CargoRepository>();
 builder.Services.AddScoped<IEmpresaRepository, EmpresaRepository>();
+builder.Services.AddScoped<ILocalizacaoEmpresaRepository, LocalizacaoEmpresaRepository>();
 
 
 // Registros de Injeção de Dependência (DI)
@@ -102,6 +103,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(chave))
         };
     });
+builder.Services.AddScoped<LocalizacaoEmpresaService>();
 
 var app = builder.Build();
 

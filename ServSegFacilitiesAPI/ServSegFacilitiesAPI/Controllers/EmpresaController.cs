@@ -34,7 +34,7 @@ namespace ServSegFacilitiesAPI.Controllers
             }
         }
 
-        [HttpGet ("{id}")]
+        [HttpGet ("EmpresaId/{id}")]
         public IActionResult ObterEmpresaPorId(int id)
         {
             try
@@ -48,7 +48,7 @@ namespace ServSegFacilitiesAPI.Controllers
             }
         }
 
-        [HttpGet ("{cnpj}")]
+        [HttpGet ("EmpresaCNPJ/{cnpj}")]
         public IActionResult ObterEmpresaPorCNPJ(string cnpj)
         {
             try
@@ -62,7 +62,7 @@ namespace ServSegFacilitiesAPI.Controllers
             }
         }
 
-        [HttpGet ("{razaoSocial}")]
+        [HttpGet ("EmpresaRazaoSocial/{razaoSocial}")]
         public IActionResult ObterEmpresaPorRazaoSocial(string razaoSocial)
         {
             try
@@ -75,9 +75,9 @@ namespace ServSegFacilitiesAPI.Controllers
                 return NotFound(ex.Message);
             }
         }
-
-        [HttpPost ("{cnpj}")]
-        public async Task<IActionResult> CriarEmpresa(string cnpj)
+            
+        [HttpPost]
+        public async Task<IActionResult> CriarEmpresa([FromBody] string cnpj)
         {
             try
             {
