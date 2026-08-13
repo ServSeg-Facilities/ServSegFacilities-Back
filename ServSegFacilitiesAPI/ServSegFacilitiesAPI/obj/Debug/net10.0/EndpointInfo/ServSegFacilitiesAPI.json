@@ -53,6 +53,37 @@
         }
       }
     },
+    "/api/RegistroPonto": {
+      "post": {
+        "tags": [
+          "RegistroPonto"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdicionarRegistroPonto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdicionarRegistroPonto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdicionarRegistroPonto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/TipoRegistro": {
       "get": {
         "tags": [
@@ -328,6 +359,28 @@
   },
   "components": {
     "schemas": {
+      "AdicionarRegistroPonto": {
+        "type": "object",
+        "properties": {
+          "latitude": {
+            "type": "number",
+            "format": "double"
+          },
+          "longitude": {
+            "type": "number",
+            "format": "double"
+          },
+          "precisao": {
+            "type": "number",
+            "format": "double"
+          },
+          "tipoRegistroId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "AdicionarTipoRegistroDto": {
         "required": [
           "nomeTipoRegistro"
@@ -444,6 +497,9 @@
   "tags": [
     {
       "name": "Autenticacao"
+    },
+    {
+      "name": "RegistroPonto"
     },
     {
       "name": "TipoRegistro"

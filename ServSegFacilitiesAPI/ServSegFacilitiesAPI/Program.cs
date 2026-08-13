@@ -60,9 +60,11 @@ builder.Services.AddDbContext<ServSeg_FacilitiesContext>(options =>
 // Registro de injeção de dependencia de DI
 // Repositories
  builder.Services.AddScoped<ITipoRegistro, TipoRegistroRepository>();
+builder.Services.AddScoped<IRegistroPonto, RegistroPontoRepository>();
 
 // Services
- builder.Services.AddScoped<TipoRegistroService>();
+builder.Services.AddScoped<TipoRegistroService>();
+builder.Services.AddScoped<RegistroPontoService>();
 
 // Configure the HTTP request pipeline.
 // Configure the HTTP request pipeline.

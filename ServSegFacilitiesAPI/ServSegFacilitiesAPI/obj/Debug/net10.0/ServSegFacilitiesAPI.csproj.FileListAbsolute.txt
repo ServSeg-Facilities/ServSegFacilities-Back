@@ -36,16 +36,7 @@ C:\Users\58069799897\Desktop\ServSegFacilities-Back\ServSegFacilitiesAPI\ServSeg
 C:\Users\58069799897\Desktop\ServSegFacilities-Back\ServSegFacilitiesAPI\ServSegFacilitiesAPI\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\58069799897\Desktop\ServSegFacilities-Back\ServSegFacilitiesAPI\ServSegFacilitiesAPI\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\58069799897\Desktop\ServSegFacilities-Back\ServSegFacilitiesAPI\ServSegFacilitiesAPI\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Users\58069799897\Desktop\ServSegFacilities-Back\ServSegFacilitiesAPI\ServSegFacilitiesAPI\bin\Debug\net10.0\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\58069799897\Desktop\ServSegFacilities-Back\ServSegFacilitiesAPI\ServSegFacilitiesAPI\bin\Debug\net10.0\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\58069799897\Desktop\ServSegFacilities-Back\ServSegFacilitiesAPI\ServSegFacilitiesAPI\bin\Debug\net10.0\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\58069799897\Desktop\ServSegFacilities-Back\ServSegFacilitiesAPI\ServSegFacilitiesAPI\bin\Debug\net10.0\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\58069799897\Desktop\ServSegFacilities-Back\ServSegFacilitiesAPI\ServSegFacilitiesAPI\bin\Debug\net10.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\58069799897\Desktop\ServSegFacilities-Back\ServSegFacilitiesAPI\ServSegFacilitiesAPI\bin\Debug\net10.0\Microsoft.Extensions.DependencyModel.dll
-C:\Users\58069799897\Desktop\ServSegFacilities-Back\ServSegFacilitiesAPI\ServSegFacilitiesAPI\bin\Debug\net10.0\Microsoft.Extensions.Logging.dll
-C:\Users\58069799897\Desktop\ServSegFacilities-Back\ServSegFacilitiesAPI\ServSegFacilitiesAPI\bin\Debug\net10.0\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\58069799897\Desktop\ServSegFacilities-Back\ServSegFacilitiesAPI\ServSegFacilitiesAPI\bin\Debug\net10.0\Microsoft.Extensions.Options.dll
-C:\Users\58069799897\Desktop\ServSegFacilities-Back\ServSegFacilitiesAPI\ServSegFacilitiesAPI\bin\Debug\net10.0\Microsoft.Extensions.Primitives.dll
 C:\Users\58069799897\Desktop\ServSegFacilities-Back\ServSegFacilitiesAPI\ServSegFacilitiesAPI\bin\Debug\net10.0\Microsoft.Identity.Client.dll
 C:\Users\58069799897\Desktop\ServSegFacilities-Back\ServSegFacilitiesAPI\ServSegFacilitiesAPI\bin\Debug\net10.0\Microsoft.Identity.Client.Extensions.Msal.dll
 C:\Users\58069799897\Desktop\ServSegFacilities-Back\ServSegFacilitiesAPI\ServSegFacilitiesAPI\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll

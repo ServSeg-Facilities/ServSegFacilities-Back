@@ -26,6 +26,22 @@
     ]
   },
   {
+    "ContainingType": "ServSegFacilitiesAPI.Controllers.RegistroPontoController",
+    "Method": "Adicionar",
+    "RelativePath": "api/RegistroPonto",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ServSegFacilitiesAPI.DTOs.RegistroPonto.AdicionarRegistroPonto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ServSegFacilitiesAPI.Controllers.TipoRegistroController",
     "Method": "Listar",
     "RelativePath": "api/TipoRegistro",
