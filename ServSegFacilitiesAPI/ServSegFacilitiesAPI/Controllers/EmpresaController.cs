@@ -1,12 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Identity.Client;
 using ServSegFacilitiesAPI.Application.Services;
-using ServSegFacilitiesAPI.Domains;
 using ServSegFacilitiesAPI.DTOs.EmpresaDTO;
-using ServSegFacilitiesAPI.Exceptions;
-using System.Runtime.CompilerServices;
 
 namespace ServSegFacilitiesAPI.Controllers
 {
@@ -28,13 +24,13 @@ namespace ServSegFacilitiesAPI.Controllers
                 var empresas = _empresaService.ListarEmpresas();
                 return Ok(empresas);
             }
-            catch (DomainException ex)
+            catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
         }
 
-        [HttpGet ("{id}")]
+        [HttpGet ("EmpresaId/{id}")]
         public IActionResult ObterEmpresaPorId(int id)
         {
             try
@@ -42,13 +38,13 @@ namespace ServSegFacilitiesAPI.Controllers
                 var empresa = _empresaService.ObterEmpresaPorId(id);
                 return Ok(empresa);
             }
-            catch (DomainException ex)
+            catch (Exception ex)
             {
                 return NotFound(ex.Message);
             }
         }
 
-        [HttpGet ("{cnpj}")]
+        [HttpGet ("EmpresaCNPJ/{cnpj}")]
         public IActionResult ObterEmpresaPorCNPJ(string cnpj)
         {
             try
@@ -56,13 +52,13 @@ namespace ServSegFacilitiesAPI.Controllers
                 var empresa = _empresaService.ObterPorCNPJ(cnpj);
                 return Ok(empresa);
             }
-            catch (DomainException ex)
+            catch (Exception ex)
             {
                 return NotFound(ex.Message);
             }
         }
 
-        [HttpGet ("{razaoSocial}")]
+        [HttpGet ("RazaoSocial/{razaoSocial}")]
         public IActionResult ObterEmpresaPorRazaoSocial(string razaoSocial)
         {
             try
@@ -70,7 +66,7 @@ namespace ServSegFacilitiesAPI.Controllers
                 var empresa = _empresaService.ObterPorRazaoSocial(razaoSocial);
                 return Ok(empresa);
             }
-            catch (DomainException ex)
+            catch (Exception ex)
             {
                 return NotFound(ex.Message);
             }
@@ -84,7 +80,7 @@ namespace ServSegFacilitiesAPI.Controllers
                 await _empresaService.CriarEmpresa(cnpj);
                 return Ok("Empresa criada com sucesso.");
             }
-            catch (DomainException ex)
+            catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
@@ -98,7 +94,7 @@ namespace ServSegFacilitiesAPI.Controllers
                 _empresaService.AtualizarEmpresa(empresaId, empresaDto);
                 return Ok("Empresa atualizada com sucesso.");
             }
-            catch (DomainException ex)
+            catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
