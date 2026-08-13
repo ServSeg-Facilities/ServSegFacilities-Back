@@ -8,8 +8,6 @@ namespace ServSegFacilitiesAPI.DTOs.RegistroPonto
 
         public double Longitude { get; set; }
 
-        public double Precisao { get; set; }
-
         public int TipoRegistroId { get; set; }
     }
 }

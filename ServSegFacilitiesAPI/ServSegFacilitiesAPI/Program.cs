@@ -60,12 +60,12 @@ builder.Services.AddDbContext<ServSeg_FacilitiesContext>(options =>
 
 // Registro de injeção de dependencia de DI
 // Repositories
- builder.Services.AddScoped<ITipoRegistro, TipoRegistroRepository>();
+builder.Services.AddScoped<ITipoRegistro, TipoRegistroRepository>();
 builder.Services.AddScoped<IRegistroPonto, RegistroPontoRepository>();
 builder.Services.AddScoped<ICargoRepository, CargoRepository>();
 builder.Services.AddScoped<IEmpresaRepository, EmpresaRepository>();
 builder.Services.AddScoped<ILocalizacaoEmpresaRepository, LocalizacaoEmpresaRepository>();
-
+builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 
 // Registros de Injeção de Dependência (DI)
 // Services

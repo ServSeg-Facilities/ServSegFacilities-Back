@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using ServSegFacilitiesAPI.Application.Autenticacao;
 using ServSegFacilitiesAPI.Contexts;
 using ServSegFacilitiesAPI.Domains;
@@ -23,16 +24,17 @@ namespace ServSegFacilitiesAPI.Application.Services
             _tokenJwt = tokenJwt;
         }
 
-        private static string HashSenha(string senha)
+        private static byte[] HashSenha(string senha)
         {
             using var sha256 = SHA256.Create();
             byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(senha));
-            return Convert.ToHexString(bytes);
+            return bytes;
         }
 
-        private static bool VerificarSenha(string senhaDigitada, string senhaHashBanco)
+        private static bool VerificarSenha(string senhaDigitada, byte[] senhaHashBanco)
         {
-            return string.Equals(HashSenha(senhaDigitada), senhaHashBanco, StringComparison.OrdinalIgnoreCase);
+            byte[] hashSenha = HashSenha(senhaDigitada);
+            return senhaHashBanco.SequenceEqual(hashSenha);
         }
 
         public async Task<TokenDto> Login(LoginDto loginDto)

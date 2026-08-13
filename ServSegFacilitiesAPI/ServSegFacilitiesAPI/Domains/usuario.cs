@@ -9,13 +9,13 @@ public partial class usuario
 
     public string nome { get; set; } = null!;
 
-    public string senha { get; set; } = null!;
-
     public string email { get; set; } = null!;
 
     public int cargoId { get; set; }
 
     public int empresaId { get; set; }
+
+    public byte[]? senha { get; set; }
 
     public virtual cargo cargo { get; set; } = null!;
 

@@ -1,10 +1,17 @@
 ﻿using ServSegFacilitiesAPI.Domains;
 using ServSegFacilitiesAPI.DTOs.EmpresaDTO;
+using ServSegFacilitiesAPI.Interfaces;
 
 namespace ServSegFacilitiesAPI.Application.Convertions
 {
-    public static class EmpresaParaDTO
+    public class EmpresaParaDTO
     {
+        private readonly ILocalizacaoEmpresaRepository _locRepository;
+        public EmpresaParaDTO(ILocalizacaoEmpresaRepository loc)
+        {
+            _locRepository = loc;
+        }
+
         public static empresa converterEmpresaParaDto(CriarEmpresaDTO empresa)
         {
             empresa empresaRet = new empresa
@@ -20,10 +27,16 @@ namespace ServSegFacilitiesAPI.Application.Convertions
                 complemento = empresa.complemento,
                 bairro = empresa.bairro,
                 cidade = empresa.cidade,
-                estado = empresa.estado
+                estado = empresa.estado,
             };
 
             return empresaRet;
+        }
+
+        public localizacaoEmpresa obterLocalizacaoPorEmpresaId(int empresaId)
+        {
+            return _locRepository.ObterPorLocalizacaoEmpresaId(empresaId);
+
         }
 
         public static empresa converterEmpresaAtualizadaDto(AtualizarEmpresaDTO atualizarEmpresa)

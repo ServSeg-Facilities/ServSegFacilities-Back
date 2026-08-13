@@ -17,7 +17,7 @@ namespace ServSegFacilitiesAPI.Application.Services
             _context = context;
         }
 
-        private static string HashSenha(string senha)
+        private static byte[] HashSenha(string senha)
         {
             if (string.IsNullOrWhiteSpace(senha))
             {
@@ -26,7 +26,7 @@ namespace ServSegFacilitiesAPI.Application.Services
 
             using var sha256 = SHA256.Create();
             byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(senha));
-            return Convert.ToHexString(bytes);
+            return bytes;
         }
 
         public async Task<IEnumerable<UsuarioResponseDto>> ListarTodos()

@@ -2,6 +2,7 @@
 using ServSegFacilitiesAPI.DTOs.RegistroPonto;
 using ServSegFacilitiesAPI.Exceptions;
 using ServSegFacilitiesAPI.Interfaces;
+using System.Globalization;
 
 namespace ServSegFacilitiesAPI.Application.Services
 {
@@ -10,17 +11,20 @@ namespace ServSegFacilitiesAPI.Application.Services
         private readonly IRegistroPonto _repository;
         private readonly IUsuarioRepository _usuarioRepository;
         private readonly IEmpresaRepository _empresaRepository;
+        private readonly ILocalizacaoEmpresaRepository _locRepository;
 
-        public RegistroPontoService(IRegistroPonto repository, IUsuarioRepository usuarioRepository, IEmpresaRepository empresaRepository)
+        public RegistroPontoService(IRegistroPonto repository, IUsuarioRepository usuarioRepository, IEmpresaRepository empresaRepository, ILocalizacaoEmpresaRepository locRepository)
         {
             _repository = repository;
             _usuarioRepository = usuarioRepository;
             _empresaRepository = empresaRepository;
+            _locRepository = locRepository;
         }
         public void Adicionar(int usuarioID, AdicionarRegistroPonto dto)
         {
             usuario usuario = _usuarioRepository.BuscarPorId(usuarioID);
             var empresa = _empresaRepository.ObterPorId(usuario.empresaId);
+            var localizacao = _locRepository.ObterPorLocalizacaoEmpresaId(empresa.empresaId);
 
             // 1. Buscar último registro
             var ultimoRegistro =
@@ -42,17 +46,17 @@ namespace ServSegFacilitiesAPI.Application.Services
                 }
             }
 
-            if (dto.Precisao > 50)
+            if (localizacao.precisao > 200)
             {
                 throw new DomainException(
                     $"A localização está imprecisa. " +
-                    $"Precisão atual: {dto.Precisao:F2} metros."
+                    $"Precisão atual: {localizacao.precisao:F2} metros."
                 );
             }
 
             //Localização temporária da empresa
-            double latitudeEmpresa = -23.550520;
-            double longitudeEmpresa = -46.633308;
+            double latitudeEmpresa = Double.Parse(localizacao.latitude, CultureInfo.InvariantCulture);
+            double longitudeEmpresa = Double.Parse(localizacao.longitude, CultureInfo.InvariantCulture);
 
             double distancia = CalcularDistancia(
                 dto.Latitude,
@@ -74,7 +78,7 @@ namespace ServSegFacilitiesAPI.Application.Services
                 usuarioId = usuarioID,
                 latitude = dto.Latitude,
                 longitude = dto.Longitude,
-                precisao = dto.Precisao,
+                precisao = (double)Convert.ToDecimal(localizacao.precisao),
                 dataHoraPonto = DateTime.Now,
                 status = true,
                 tipoRegistroId = dto.TipoRegistroId

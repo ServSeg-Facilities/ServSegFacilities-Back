@@ -24,9 +24,34 @@ namespace ServSegFacilitiesAPI.Application.Services
             _localizacaoEmpresaRepository = localizacaoEmpresaRepository;
         }
 
-        public List<empresa> ListarEmpresas()
+        public List<ListarEmpresaDTO> ListarEmpresas()
         {
-            List<empresa> empresas = _empresaRepository.Listar();
+
+            List<ListarEmpresaDTO> empresas = _empresaRepository.Listar().Select(emp =>
+            {
+                var localizacao = _localizacaoEmpresaRepository
+                .ObterPorLocalizacaoEmpresaId(emp.empresaId);
+
+                return new ListarEmpresaDTO
+                {
+                    empresaId = emp.empresaId,
+                    cnpj = emp.cnpj,
+                    razaoSocial = emp.razaoSocial,
+                    nomeFantasia = emp.nomeFantasia,
+                    telefone = emp.telefone,
+                    email = emp.email,
+                    cep = emp.cep,
+                    logradouro = emp.logradouro,
+                    numero = emp.numero,
+                    complemento = emp.complemento,
+                    bairro = emp.bairro,
+                    cidade = emp.cidade,
+                    estado = emp.estado,
+                    latitude = localizacao?.latitude ?? "null",
+                    longitude = localizacao?.longitude ?? "null"
+                };
+            }).ToList();
+
             if (empresas == null)
                 throw new DomainException("Nenhuma empresa para listar.");
 

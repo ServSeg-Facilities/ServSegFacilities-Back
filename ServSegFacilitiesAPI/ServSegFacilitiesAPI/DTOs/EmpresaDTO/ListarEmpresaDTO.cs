@@ -1,4 +1,6 @@
-﻿namespace ServSegFacilitiesAPI.DTOs.EmpresaDTO
+﻿using ServSegFacilitiesAPI.Domains;
+
+namespace ServSegFacilitiesAPI.DTOs.EmpresaDTO
 {
     public class ListarEmpresaDTO
     {

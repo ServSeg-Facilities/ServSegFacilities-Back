@@ -22,12 +22,16 @@ namespace ServSegFacilitiesAPI.Repositories
                 .ToListAsync();
         }
 
-        public async Task<usuario> BuscarPorId(int id)
+        public usuario BuscarPorId(int id)
         {
-            return await _context.usuario
-                .Include(u => u.cargo)
-                .Include(u => u.empresa)
-                .FirstOrDefaultAsync(u => u.usuarioId == id);
+            Console.WriteLine($"ID recebido: {id}");
+
+            var usuario = _context.usuario
+                .Find(id);
+
+            Console.WriteLine($"Resultado: {usuario?.nome ?? "NULL"}");
+
+            return usuario;
         }
 
         public async Task Cadastrar(usuario novoUsuario)
