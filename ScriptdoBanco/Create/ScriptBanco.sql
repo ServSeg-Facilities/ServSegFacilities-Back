@@ -85,3 +85,12 @@ GO
 ALTER TABLE registroPonto ADD FOREIGN KEY (tipoRegistroId) REFERENCES tipoRegistro (tipoRegistroId)
 GO
 
+ALTER TABLE registroPonto
+ALTER COLUMN latitude FLOAT NOT NULL;
+
+ALTER TABLE registroPonto
+ALTER COLUMN longitude FLOAT NOT NULL;
+
+ALTER TABLE registroPonto
+ADD precisao FLOAT NOT NULL DEFAULT 0;
+
