@@ -26,6 +26,85 @@
     ]
   },
   {
+    "ContainingType": "ServSegFacilitiesAPI.Controllers.CargosController",
+    "Method": "Get",
+    "RelativePath": "api/Cargos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServSegFacilitiesAPI.Controllers.CargosController",
+    "Method": "Post",
+    "RelativePath": "api/Cargos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ServSegFacilitiesAPI.DTOs.CargoCriarDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServSegFacilitiesAPI.Controllers.CargosController",
+    "Method": "GetById",
+    "RelativePath": "api/Cargos/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServSegFacilitiesAPI.Controllers.CargosController",
+    "Method": "Put",
+    "RelativePath": "api/Cargos/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "ServSegFacilitiesAPI.DTOs.CargoCriarDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServSegFacilitiesAPI.Controllers.CargosController",
+    "Method": "Delete",
+    "RelativePath": "api/Cargos/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ServSegFacilitiesAPI.Controllers.RegistroPontoController",
     "Method": "Adicionar",
     "RelativePath": "api/RegistroPonto",

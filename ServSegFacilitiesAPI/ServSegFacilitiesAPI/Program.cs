@@ -18,12 +18,12 @@ Env.Load();
 string connectionString = Environment.GetEnvironmentVariable("CONNECTION_STRING")!;
 
 // Controllers + Solução para evitar loop de JSON (Ciclos de Objeto)
+
 builder.Services.AddControllers().AddJsonOptions(options =>
 {
     options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
 });
 
-// Configura política de CORS para o frontend
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("CorsPolicy", policy =>
@@ -34,7 +34,6 @@ builder.Services.AddCors(options =>
     });
 });
 
-// Configura Swagger para suportar o Token JWT Bearer (Sintaxe compatível com Swashbuckle v10+)
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -61,10 +60,13 @@ builder.Services.AddDbContext<ServSeg_FacilitiesContext>(options =>
 // Repositories
  builder.Services.AddScoped<ITipoRegistro, TipoRegistroRepository>();
 builder.Services.AddScoped<IRegistroPonto, RegistroPontoRepository>();
+builder.Services.AddScoped<ICargoRepository, CargoRepository>();
+
 
 // Services
 builder.Services.AddScoped<TipoRegistroService>();
 builder.Services.AddScoped<RegistroPontoService>();
+builder.Services.AddScoped<CargoService>();
 
 // Configure the HTTP request pipeline.
 // Configure the HTTP request pipeline.
@@ -78,6 +80,7 @@ builder.Services.AddScoped<GeradorTokenJwt>();
 builder.Services.AddScoped<AutenticacaoService>();
 
 // Configuração da Autenticação JWT Bearer
+
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -99,10 +102,8 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 var app = builder.Build();
 
-// Middleware CORS
 app.UseCors("CorsPolicy");
 
-// Pipeline de requisições HTTP
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -111,7 +112,6 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-// Ativação da Autenticação e Autorização
 app.UseAuthentication();
 app.UseAuthorization();
 
