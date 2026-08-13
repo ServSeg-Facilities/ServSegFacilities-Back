@@ -9,9 +9,8 @@ namespace ServSegFacilitiesAPI.Application.Convertions
         {
             return new localizacaoEmpresa
             {
-                empresaId = criarLocalizacaoEmpresaDTO.empresaId,
-                latitude = criarLocalizacaoEmpresaDTO.latitude,
-                longitude = criarLocalizacaoEmpresaDTO.longitude,
+                ///latitude = criarLocalizacaoEmpresaDTO.latitude,
+                //longitude = criarLocalizacaoEmpresaDTO.longitude,
                 precisao = 100,
             };
         }

@@ -16,7 +16,7 @@ namespace ServSegFacilitiesAPI.Application.Services
 
         public ListarLocalizacaoEmpresaDTO ObterPorEmpresaId(int empresaId)
         {
-            localizacaoEmpresa local = _localizacaoRepo.ObterPorEmpresaId(empresaId);
+            localizacaoEmpresa local = _localizacaoRepo.ObterPorLocalizacaoEmpresaId(empresaId);
             if (local == null)
                 throw new DomainException("localizacao da empresa não encontrada");
 
@@ -32,7 +32,7 @@ namespace ServSegFacilitiesAPI.Application.Services
 
         public void AdicionarLocalizacaoEmpresa(int empresaId, CriarLocalizacaoEmpresaDTO localizacaoEmpresa)
         {
-            if (localizacaoEmpresa.empresaId == null || localizacaoEmpresa.latitude == null || localizacaoEmpresa.longitude == null)
+            if (localizacaoEmpresa.Location.Coordinates.Latitude == null || localizacaoEmpresa.Location.Coordinates.Longitude == null)
                 throw new DomainException("Localização não cadastrada! preencha todos os campos.");
 
             _localizacaoRepo.AdicionarLocalizacaoEmpresa(empresaId, LocalizacaoEmpresaParaDTO.ConverterLocalizacaoParaDto(localizacaoEmpresa));
@@ -40,7 +40,7 @@ namespace ServSegFacilitiesAPI.Application.Services
 
         public void AtualizarLocalizacaoEmpresa(int empresaId, AtualizarLocalizacaoEmpresaDTO localizacaoEmpresa)
         {
-            if ( localizacaoEmpresa.latitude == null || localizacaoEmpresa.longitude == null || localizacaoEmpresa.precisao == null)
+            if (localizacaoEmpresa.latitude == null || localizacaoEmpresa.longitude == null || localizacaoEmpresa.precisao == null)
                 throw new DomainException("Localização não atualizada! preencha todos os campos.");
 
             _localizacaoRepo.AtualizarLocalizacaoEmpresa(empresaId, LocalizacaoEmpresaParaDTO.convertAtualizarLocalizacaoParaDto(localizacaoEmpresa));

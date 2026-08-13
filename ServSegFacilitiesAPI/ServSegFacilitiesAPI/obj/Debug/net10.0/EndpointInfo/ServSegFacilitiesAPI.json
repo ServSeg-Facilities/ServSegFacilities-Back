@@ -17,7 +17,7 @@
         }
       }
     },
-    "/api/Empresa/{id}": {
+    "/api/Empresa/EmpresaId/{id}": {
       "get": {
         "tags": [
           "Empresa"
@@ -38,7 +38,75 @@
             "description": "OK"
           }
         }
-      },
+      }
+    },
+    "/api/Empresa/EmpresaCNPJ/{cnpj}": {
+      "get": {
+        "tags": [
+          "Empresa"
+        ],
+        "parameters": [
+          {
+            "name": "cnpj",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Empresa/EmpresaRazaoSocial/{razaoSocial}": {
+      "get": {
+        "tags": [
+          "Empresa"
+        ],
+        "parameters": [
+          {
+            "name": "razaoSocial",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Empresa/{cnpj}": {
+      "post": {
+        "tags": [
+          "Empresa"
+        ],
+        "parameters": [
+          {
+            "name": "cnpj",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Empresa/{id}": {
       "patch": {
         "tags": [
           "Empresa"
@@ -80,70 +148,6 @@
             }
           }
         },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Empresa/{cnpj}": {
-      "get": {
-        "tags": [
-          "Empresa"
-        ],
-        "parameters": [
-          {
-            "name": "cnpj",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "Empresa"
-        ],
-        "parameters": [
-          {
-            "name": "cnpj",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Empresa/{razaoSocial}": {
-      "get": {
-        "tags": [
-          "Empresa"
-        ],
-        "parameters": [
-          {
-            "name": "razaoSocial",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
         "responses": {
           "200": {
             "description": "OK"

@@ -11,22 +11,6 @@
   },
   {
     "ContainingType": "ServSegFacilitiesAPI.Controllers.EmpresaController",
-    "Method": "ObterEmpresaPorCNPJ",
-    "RelativePath": "api/Empresa/{cnpj}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "cnpj",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ServSegFacilitiesAPI.Controllers.EmpresaController",
     "Method": "CriarEmpresa",
     "RelativePath": "api/Empresa/{cnpj}",
     "HttpMethod": "POST",
@@ -36,22 +20,6 @@
       {
         "Name": "cnpj",
         "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ServSegFacilitiesAPI.Controllers.EmpresaController",
-    "Method": "ObterEmpresaPorId",
-    "RelativePath": "api/Empresa/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -85,8 +53,40 @@
   },
   {
     "ContainingType": "ServSegFacilitiesAPI.Controllers.EmpresaController",
+    "Method": "ObterEmpresaPorCNPJ",
+    "RelativePath": "api/Empresa/EmpresaCNPJ/{cnpj}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cnpj",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServSegFacilitiesAPI.Controllers.EmpresaController",
+    "Method": "ObterEmpresaPorId",
+    "RelativePath": "api/Empresa/EmpresaId/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServSegFacilitiesAPI.Controllers.EmpresaController",
     "Method": "ObterEmpresaPorRazaoSocial",
-    "RelativePath": "api/Empresa/{razaoSocial}",
+    "RelativePath": "api/Empresa/EmpresaRazaoSocial/{razaoSocial}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ServSegFacilitiesAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f59de9d4dc2dcb5d8499fdee313cc115dea3a3c2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7fed509ae32d13ce1612616aa377994724ff2065")]
 [assembly: System.Reflection.AssemblyProductAttribute("ServSegFacilitiesAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ServSegFacilitiesAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

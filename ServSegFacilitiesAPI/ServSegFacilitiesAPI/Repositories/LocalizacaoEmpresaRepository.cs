@@ -12,20 +12,20 @@ namespace ServSegFacilitiesAPI.Repositories
             _context = context;
         }
 
-        public localizacaoEmpresa ObterPorEmpresaId(int id)
+        public localizacaoEmpresa ObterPorLocalizacaoEmpresaId(int id)
         {
             return _context.localizacaoEmpresa.Find(id);
         }
 
         public void AdicionarLocalizacaoEmpresa(int empresaId, localizacaoEmpresa localizacaoEmpresa)
         {
-            _context.Add(localizacaoEmpresa);
+            _context.localizacaoEmpresa.Add(localizacaoEmpresa);
             _context.SaveChanges();
         }
 
         public void AtualizarLocalizacaoEmpresa(int empresaId, localizacaoEmpresa localizacaoEmpresa)
         {
-            _context.Update(localizacaoEmpresa);
+            _context.localizacaoEmpresa.Update(localizacaoEmpresa);
             _context.SaveChanges();
         }
     }

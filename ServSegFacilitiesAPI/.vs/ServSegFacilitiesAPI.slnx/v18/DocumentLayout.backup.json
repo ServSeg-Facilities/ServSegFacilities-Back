@@ -1,97 +1,100 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\",
+  "WorkspaceRootPath": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\kauec\\onedrive\\documentos\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\application\\services\\localizacaoempresaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\application\\services\\localizacaoempresaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\kauec\\onedrive\\documentos\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\application\\convertions\\localizacaoempresaparadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\application\\convertions\\localizacaoempresaparadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\kauec\\onedrive\\documentos\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\interfaces\\ilocalizacaoempresarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\interfaces\\ilocalizacaoempresarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\kauec\\onedrive\\documentos\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\application\\convertions\\empresaparadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\application\\convertions\\empresaparadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\kauec\\onedrive\\documentos\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\dtos\\localizacaoempresadto\\listarlocalizacaoempresadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\dtos\\localizacaoempresadto\\listarlocalizacaoempresadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\kauec\\onedrive\\documentos\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\dtos\\localizacaoempresadto\\atualizarlocalizacaoempresadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\dtos\\localizacaoempresadto\\atualizarlocalizacaoempresadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\kauec\\onedrive\\documentos\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\domains\\localizacaoempresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\domains\\localizacaoempresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\kauec\\onedrive\\documentos\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\domains\\empresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\domains\\empresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\kauec\\onedrive\\documentos\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\dtos\\localizacaoempresadto\\criarlocalizacaoempresadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\dtos\\localizacaoempresadto\\criarlocalizacaoempresadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\kauec\\onedrive\\documentos\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\repositories\\empresarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\repositories\\empresarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\kauec\\onedrive\\documentos\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\application\\services\\empresaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\23969368839\\documents\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\application\\services\\empresaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\application\\services\\empresaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\kauec\\onedrive\\documentos\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\repositories\\localizacaoempresarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\23969368839\\documents\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\domains\\localizacaoempresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\domains\\localizacaoempresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\23969368839\\documents\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\repositories\\empresarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\repositories\\empresarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\23969368839\\documents\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\repositories\\localizacaoempresarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\repositories\\localizacaoempresarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\kauec\\onedrive\\documentos\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\interfaces\\iempresarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\interfaces\\iempresarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\23969368839\\documents\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\application\\convertions\\localizacaoempresaparadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\application\\convertions\\localizacaoempresaparadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\kauec\\onedrive\\documentos\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\dtos\\empresadto\\criarempresadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\dtos\\empresadto\\criarempresadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\kauec\\onedrive\\documentos\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\dtos\\empresadto\\listarempresadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\dtos\\empresadto\\listarempresadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\kauec\\onedrive\\documentos\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\dtos\\empresadto\\atualizarempresadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\dtos\\empresadto\\atualizarempresadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\kauec\\onedrive\\documentos\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\controllers\\empresacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\23969368839\\documents\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\controllers\\empresacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\controllers\\empresacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\kauec\\onedrive\\documentos\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\23969368839\\documents\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\dtos\\localizacaoempresadto\\criarlocalizacaoempresadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\dtos\\localizacaoempresadto\\criarlocalizacaoempresadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\kauec\\onedrive\\documentos\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\exceptions\\domainexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\exceptions\\domainexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\23969368839\\AppData\\Local\\SourceServer\\9b74658156a9c0be3f4c919217968f7cd497e1030bfdd6a700280b5e02cc484f\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Controllers\\EmpresaController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\kauec\\onedrive\\documentos\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\servsegfacilitiesapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\servsegfacilitiesapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\23969368839\\documents\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\dtos\\empresadto\\criarempresadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\dtos\\empresadto\\criarempresadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\kauec\\onedrive\\documentos\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\contexts\\servseg_facilitiescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\23969368839\\documents\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\application\\services\\localizacaoempresaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\application\\services\\localizacaoempresaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\23969368839\\documents\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\contexts\\servseg_facilitiescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\contexts\\servseg_facilitiescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\kauec\\onedrive\\documentos\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\23969368839\\documents\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\23969368839\\documents\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\interfaces\\ilocalizacaoempresarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\interfaces\\ilocalizacaoempresarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\23969368839\\documents\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\application\\convertions\\empresaparadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\application\\convertions\\empresaparadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\23969368839\\documents\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\dtos\\localizacaoempresadto\\listarlocalizacaoempresadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\dtos\\localizacaoempresadto\\listarlocalizacaoempresadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\23969368839\\documents\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\dtos\\localizacaoempresadto\\atualizarlocalizacaoempresadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\dtos\\localizacaoempresadto\\atualizarlocalizacaoempresadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\23969368839\\documents\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\domains\\empresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\domains\\empresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\23969368839\\documents\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\interfaces\\iempresarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\interfaces\\iempresarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\23969368839\\documents\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\dtos\\empresadto\\listarempresadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\dtos\\empresadto\\listarempresadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\23969368839\\documents\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\dtos\\empresadto\\atualizarempresadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\dtos\\empresadto\\atualizarempresadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\23969368839\\documents\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\exceptions\\domainexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\exceptions\\domainexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\23969368839\\documents\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\servsegfacilitiesapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\servsegfacilitiesapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\23969368839\\documents\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\.env||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\kauec\\onedrive\\documentos\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\.env.example||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|c:\\users\\23969368839\\documents\\projetos\\servsegfacilities-back\\servsegfacilitiesapi\\servsegfacilitiesapi\\.env.example||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{7B0B0DDD-3BDC-F571-51CA-F50D693C8786}|ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj|solutionrelative:servsegfacilitiesapi\\.env.example||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
@@ -105,54 +108,54 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmpresaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Repositories\\EmpresaRepository.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Repositories\\EmpresaRepository.cs",
+              "ToolTip": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Repositories\\EmpresaRepository.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\Repositories\\EmpresaRepository.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAEwCwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T11:07:32.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ListarLocalizacaoEmpresaDTO.cs",
-              "DocumentMoniker": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\LocalizacaoEmpresaDTO\\ListarLocalizacaoEmpresaDTO.cs",
-              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\DTOs\\LocalizacaoEmpresaDTO\\ListarLocalizacaoEmpresaDTO.cs",
-              "ToolTip": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\LocalizacaoEmpresaDTO\\ListarLocalizacaoEmpresaDTO.cs",
-              "RelativeToolTip": "ServSegFacilitiesAPI\\DTOs\\LocalizacaoEmpresaDTO\\ListarLocalizacaoEmpresaDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
+              "Title": "LocalizacaoEmpresaParaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Application\\Convertions\\LocalizacaoEmpresaParaDTO.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Application\\Convertions\\LocalizacaoEmpresaParaDTO.cs",
+              "ToolTip": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Application\\Convertions\\LocalizacaoEmpresaParaDTO.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\Application\\Convertions\\LocalizacaoEmpresaParaDTO.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAUwBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-12T17:58:21.36Z",
+              "WhenOpened": "2026-08-12T17:52:27.338Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LocalizacaoEmpresaService.cs",
-              "DocumentMoniker": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Application\\Services\\LocalizacaoEmpresaService.cs",
-              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Application\\Services\\LocalizacaoEmpresaService.cs",
-              "ToolTip": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Application\\Services\\LocalizacaoEmpresaService.cs",
-              "RelativeToolTip": "ServSegFacilitiesAPI\\Application\\Services\\LocalizacaoEmpresaService.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAiwC0AAACAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "LocalizacaoEmpresaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Repositories\\LocalizacaoEmpresaRepository.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Repositories\\LocalizacaoEmpresaRepository.cs",
+              "ToolTip": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Repositories\\LocalizacaoEmpresaRepository.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\Repositories\\LocalizacaoEmpresaRepository.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwBsAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-12T17:56:48.836Z",
+              "WhenOpened": "2026-08-12T17:44:42.583Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AtualizarLocalizacaoEmpresaDTO.cs",
-              "DocumentMoniker": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\LocalizacaoEmpresaDTO\\AtualizarLocalizacaoEmpresaDTO.cs",
-              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\DTOs\\LocalizacaoEmpresaDTO\\AtualizarLocalizacaoEmpresaDTO.cs",
-              "ToolTip": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\LocalizacaoEmpresaDTO\\AtualizarLocalizacaoEmpresaDTO.cs",
-              "RelativeToolTip": "ServSegFacilitiesAPI\\DTOs\\LocalizacaoEmpresaDTO\\AtualizarLocalizacaoEmpresaDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-12T17:51:45.926Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "localizacaoEmpresa.cs",
-              "DocumentMoniker": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Domains\\localizacaoEmpresa.cs",
+              "DocumentMoniker": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Domains\\localizacaoEmpresa.cs",
               "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Domains\\localizacaoEmpresa.cs",
-              "ToolTip": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Domains\\localizacaoEmpresa.cs",
+              "ToolTip": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Domains\\localizacaoEmpresa.cs",
               "RelativeToolTip": "ServSegFacilitiesAPI\\Domains\\localizacaoEmpresa.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -161,115 +164,171 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EmpresaParaDTO.cs",
-              "DocumentMoniker": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Application\\Convertions\\EmpresaParaDTO.cs",
-              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Application\\Convertions\\EmpresaParaDTO.cs",
-              "ToolTip": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Application\\Convertions\\EmpresaParaDTO.cs",
-              "RelativeToolTip": "ServSegFacilitiesAPI\\Application\\Convertions\\EmpresaParaDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBYAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-12T11:35:31.783Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ILocalizacaoEmpresaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Interfaces\\ILocalizacaoEmpresaRepository.cs",
-              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Interfaces\\ILocalizacaoEmpresaRepository.cs",
-              "ToolTip": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Interfaces\\ILocalizacaoEmpresaRepository.cs",
-              "RelativeToolTip": "ServSegFacilitiesAPI\\Interfaces\\ILocalizacaoEmpresaRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-12T17:40:41.569Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LocalizacaoEmpresaParaDTO.cs",
-              "DocumentMoniker": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Application\\Convertions\\LocalizacaoEmpresaParaDTO.cs",
-              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Application\\Convertions\\LocalizacaoEmpresaParaDTO.cs",
-              "ToolTip": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Application\\Convertions\\LocalizacaoEmpresaParaDTO.cs",
-              "RelativeToolTip": "ServSegFacilitiesAPI\\Application\\Convertions\\LocalizacaoEmpresaParaDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAswAcAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-12T17:52:27.338Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "empresa.cs",
-              "DocumentMoniker": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Domains\\empresa.cs",
-              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Domains\\empresa.cs",
-              "ToolTip": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Domains\\empresa.cs",
-              "RelativeToolTip": "ServSegFacilitiesAPI\\Domains\\empresa.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAiwB8AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-12T11:11:21.432Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CriarLocalizacaoEmpresaDTO.cs",
-              "DocumentMoniker": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\LocalizacaoEmpresaDTO\\CriarLocalizacaoEmpresaDTO.cs",
-              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\DTOs\\LocalizacaoEmpresaDTO\\CriarLocalizacaoEmpresaDTO.cs",
-              "ToolTip": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\LocalizacaoEmpresaDTO\\CriarLocalizacaoEmpresaDTO.cs",
-              "RelativeToolTip": "ServSegFacilitiesAPI\\DTOs\\LocalizacaoEmpresaDTO\\CriarLocalizacaoEmpresaDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-12T17:50:33.863Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "LocalizacaoEmpresaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Repositories\\LocalizacaoEmpresaRepository.cs",
-              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Repositories\\LocalizacaoEmpresaRepository.cs",
-              "ToolTip": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Repositories\\LocalizacaoEmpresaRepository.cs",
-              "RelativeToolTip": "ServSegFacilitiesAPI\\Repositories\\LocalizacaoEmpresaRepository.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAYwBwAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-12T17:44:42.583Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "EmpresaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Repositories\\EmpresaRepository.cs",
-              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Repositories\\EmpresaRepository.cs",
-              "ToolTip": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Repositories\\EmpresaRepository.cs",
-              "RelativeToolTip": "ServSegFacilitiesAPI\\Repositories\\EmpresaRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-12T11:07:32.888Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 0,
               "Title": "EmpresaService.cs",
-              "DocumentMoniker": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Application\\Services\\EmpresaService.cs",
+              "DocumentMoniker": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Application\\Services\\EmpresaService.cs",
               "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Application\\Services\\EmpresaService.cs",
-              "ToolTip": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Application\\Services\\EmpresaService.cs",
+              "ToolTip": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Application\\Services\\EmpresaService.cs",
               "RelativeToolTip": "ServSegFacilitiesAPI\\Application\\Services\\EmpresaService.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAcwFEAAABgAAAAAAAAAA==",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAiwFsAAABdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-12T11:19:11.075Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 7,
+              "Title": "EmpresaController.cs",
+              "DocumentMoniker": "C:\\Users\\23969368839\\AppData\\Local\\SourceServer\\9b74658156a9c0be3f4c919217968f7cd497e1030bfdd6a700280b5e02cc484f\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Controllers\\EmpresaController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\9b74658156a9c0be3f4c919217968f7cd497e1030bfdd6a700280b5e02cc484f\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Controllers\\EmpresaController.cs",
+              "ToolTip": "C:\\Users\\23969368839\\AppData\\Local\\SourceServer\\9b74658156a9c0be3f4c919217968f7cd497e1030bfdd6a700280b5e02cc484f\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Controllers\\EmpresaController.cs [Somente Leitura]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\9b74658156a9c0be3f4c919217968f7cd497e1030bfdd6a700280b5e02cc484f\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Controllers\\EmpresaController.cs [Somente Leitura]",
+              "ViewState": "AgIAAEoAAAAAAAAAAAASwFYAAAAmAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-13T13:22:32.175Z",
+              "EditorCaption": " [Somente Leitura]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CriarLocalizacaoEmpresaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\LocalizacaoEmpresaDTO\\CriarLocalizacaoEmpresaDTO.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\DTOs\\LocalizacaoEmpresaDTO\\CriarLocalizacaoEmpresaDTO.cs",
+              "ToolTip": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\LocalizacaoEmpresaDTO\\CriarLocalizacaoEmpresaDTO.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\DTOs\\LocalizacaoEmpresaDTO\\CriarLocalizacaoEmpresaDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T17:50:33.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmpresaController.cs",
+              "DocumentMoniker": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Controllers\\EmpresaController.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Controllers\\EmpresaController.cs",
+              "ToolTip": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Controllers\\EmpresaController.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\Controllers\\EmpresaController.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAADgv1IAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T11:44:32.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LocalizacaoEmpresaService.cs",
+              "DocumentMoniker": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Application\\Services\\LocalizacaoEmpresaService.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Application\\Services\\LocalizacaoEmpresaService.cs",
+              "ToolTip": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Application\\Services\\LocalizacaoEmpresaService.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\Application\\Services\\LocalizacaoEmpresaService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAYwCIAAAB9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T17:56:48.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CriarEmpresaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\EmpresaDTO\\CriarEmpresaDTO.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\DTOs\\EmpresaDTO\\CriarEmpresaDTO.cs",
+              "ToolTip": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\EmpresaDTO\\CriarEmpresaDTO.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\DTOs\\EmpresaDTO\\CriarEmpresaDTO.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAIwBEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T11:10:55.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Program.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Program.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\Program.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAEMAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-11T16:35:49.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ServSeg_FacilitiesContext.cs",
+              "DocumentMoniker": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Contexts\\ServSeg_FacilitiesContext.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Contexts\\ServSeg_FacilitiesContext.cs",
+              "ToolTip": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Contexts\\ServSeg_FacilitiesContext.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\Contexts\\ServSeg_FacilitiesContext.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAUwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-11T17:16:50.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ILocalizacaoEmpresaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Interfaces\\ILocalizacaoEmpresaRepository.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Interfaces\\ILocalizacaoEmpresaRepository.cs",
+              "ToolTip": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Interfaces\\ILocalizacaoEmpresaRepository.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\Interfaces\\ILocalizacaoEmpresaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T17:40:41.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EmpresaParaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Application\\Convertions\\EmpresaParaDTO.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Application\\Convertions\\EmpresaParaDTO.cs",
+              "ToolTip": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Application\\Convertions\\EmpresaParaDTO.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\Application\\Convertions\\EmpresaParaDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBYAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T11:35:31.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AtualizarLocalizacaoEmpresaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\LocalizacaoEmpresaDTO\\AtualizarLocalizacaoEmpresaDTO.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\DTOs\\LocalizacaoEmpresaDTO\\AtualizarLocalizacaoEmpresaDTO.cs",
+              "ToolTip": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\LocalizacaoEmpresaDTO\\AtualizarLocalizacaoEmpresaDTO.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\DTOs\\LocalizacaoEmpresaDTO\\AtualizarLocalizacaoEmpresaDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T17:51:45.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ListarLocalizacaoEmpresaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\LocalizacaoEmpresaDTO\\ListarLocalizacaoEmpresaDTO.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\DTOs\\LocalizacaoEmpresaDTO\\ListarLocalizacaoEmpresaDTO.cs",
+              "ToolTip": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\LocalizacaoEmpresaDTO\\ListarLocalizacaoEmpresaDTO.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\DTOs\\LocalizacaoEmpresaDTO\\ListarLocalizacaoEmpresaDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T17:58:21.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "empresa.cs",
+              "DocumentMoniker": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Domains\\empresa.cs",
+              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Domains\\empresa.cs",
+              "ToolTip": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Domains\\empresa.cs",
+              "RelativeToolTip": "ServSegFacilitiesAPI\\Domains\\empresa.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAA4wB8AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-12T11:11:21.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "DomainException.cs",
-              "DocumentMoniker": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Exceptions\\DomainException.cs",
+              "DocumentMoniker": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Exceptions\\DomainException.cs",
               "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Exceptions\\DomainException.cs",
-              "ToolTip": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Exceptions\\DomainException.cs",
+              "ToolTip": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Exceptions\\DomainException.cs",
               "RelativeToolTip": "ServSegFacilitiesAPI\\Exceptions\\DomainException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -277,11 +336,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "ServSegFacilitiesAPI.csproj",
-              "DocumentMoniker": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj",
+              "DocumentMoniker": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj",
               "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj",
-              "ToolTip": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj",
+              "ToolTip": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj",
               "RelativeToolTip": "ServSegFacilitiesAPI\\ServSegFacilitiesAPI.csproj",
               "ViewState": "AgIAAAQAAAAAAAAAAAAYwBkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -289,11 +348,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "AtualizarEmpresaDTO.cs",
-              "DocumentMoniker": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\EmpresaDTO\\AtualizarEmpresaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\EmpresaDTO\\AtualizarEmpresaDTO.cs",
               "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\DTOs\\EmpresaDTO\\AtualizarEmpresaDTO.cs",
-              "ToolTip": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\EmpresaDTO\\AtualizarEmpresaDTO.cs",
+              "ToolTip": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\EmpresaDTO\\AtualizarEmpresaDTO.cs",
               "RelativeToolTip": "ServSegFacilitiesAPI\\DTOs\\EmpresaDTO\\AtualizarEmpresaDTO.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAswBgAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -302,83 +361,34 @@
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Program.cs",
-              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Program.cs",
-              "RelativeToolTip": "ServSegFacilitiesAPI\\Program.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAYwEcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-11T16:35:49.804Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "IEmpresaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Interfaces\\IEmpresaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Interfaces\\IEmpresaRepository.cs",
               "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Interfaces\\IEmpresaRepository.cs",
-              "ToolTip": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Interfaces\\IEmpresaRepository.cs",
+              "ToolTip": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Interfaces\\IEmpresaRepository.cs",
               "RelativeToolTip": "ServSegFacilitiesAPI\\Interfaces\\IEmpresaRepository.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAxwAgAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-12T11:01:03.448Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-12T11:01:03.448Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "EmpresaController.cs",
-              "DocumentMoniker": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Controllers\\EmpresaController.cs",
-              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Controllers\\EmpresaController.cs",
-              "ToolTip": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Controllers\\EmpresaController.cs",
-              "RelativeToolTip": "ServSegFacilitiesAPI\\Controllers\\EmpresaController.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAgwFIAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-12T11:44:32.597Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "ListarEmpresaDTO.cs",
-              "DocumentMoniker": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\EmpresaDTO\\ListarEmpresaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\EmpresaDTO\\ListarEmpresaDTO.cs",
               "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\DTOs\\EmpresaDTO\\ListarEmpresaDTO.cs",
-              "ToolTip": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\EmpresaDTO\\ListarEmpresaDTO.cs",
+              "ToolTip": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\EmpresaDTO\\ListarEmpresaDTO.cs",
               "RelativeToolTip": "ServSegFacilitiesAPI\\DTOs\\EmpresaDTO\\ListarEmpresaDTO.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAuwB8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAA+wB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-12T11:11:06.555Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "CriarEmpresaDTO.cs",
-              "DocumentMoniker": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\EmpresaDTO\\CriarEmpresaDTO.cs",
-              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\DTOs\\EmpresaDTO\\CriarEmpresaDTO.cs",
-              "ToolTip": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\DTOs\\EmpresaDTO\\CriarEmpresaDTO.cs",
-              "RelativeToolTip": "ServSegFacilitiesAPI\\DTOs\\EmpresaDTO\\CriarEmpresaDTO.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAIwBEAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-12T11:10:55.636Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ServSeg_FacilitiesContext.cs",
-              "DocumentMoniker": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Contexts\\ServSeg_FacilitiesContext.cs",
-              "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\Contexts\\ServSeg_FacilitiesContext.cs",
-              "ToolTip": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\Contexts\\ServSeg_FacilitiesContext.cs",
-              "RelativeToolTip": "ServSegFacilitiesAPI\\Contexts\\ServSeg_FacilitiesContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-11T17:16:50.682Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": ".env",
-              "DocumentMoniker": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\.env",
+              "DocumentMoniker": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\.env",
               "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\.env",
-              "ToolTip": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\.env",
+              "ToolTip": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\.env",
               "RelativeToolTip": "ServSegFacilitiesAPI\\.env",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
@@ -386,23 +396,22 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "suggested-fix.txt",
               "DocumentMoniker": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\suggested-fix.txt",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\suggested-fix.txt",
+              "RelativeDocumentMoniker": "..\\suggested-fix.txt",
               "ToolTip": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\suggested-fix.txt",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\suggested-fix.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAARAAAAAAAAAA==",
+              "RelativeToolTip": "..\\suggested-fix.txt",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2026-08-12T11:55:08.222Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": ".env.example",
-              "DocumentMoniker": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\.env.example",
+              "DocumentMoniker": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\.env.example",
               "RelativeDocumentMoniker": "ServSegFacilitiesAPI\\.env.example",
-              "ToolTip": "C:\\Users\\kauec\\OneDrive\\Documentos\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\.env.example",
+              "ToolTip": "C:\\Users\\23969368839\\Documents\\Projetos\\ServSegFacilities-Back\\ServSegFacilitiesAPI\\ServSegFacilitiesAPI\\.env.example",
               "RelativeToolTip": "ServSegFacilitiesAPI\\.env.example",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",

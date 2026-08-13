@@ -5,18 +5,22 @@ using ServSegFacilitiesAPI.Application.Convertions;
 using ServSegFacilitiesAPI.Controllers;
 using ServSegFacilitiesAPI.Domains;
 using ServSegFacilitiesAPI.DTOs.EmpresaDTO;
+using ServSegFacilitiesAPI.DTOs.LocalizacaoEmpresaDTO;
 using ServSegFacilitiesAPI.Exceptions;
 using ServSegFacilitiesAPI.Interfaces;
+using System.Runtime.ConstrainedExecution;
 
 namespace ServSegFacilitiesAPI.Application.Services
 {
     public class EmpresaService
     {
         private readonly IEmpresaRepository _empresaRepository;
+        private readonly ILocalizacaoEmpresaRepository _localizacaoEmpresaRepository;
 
-        public EmpresaService(IEmpresaRepository empresaRepository)
+        public EmpresaService(IEmpresaRepository empresaRepository, ILocalizacaoEmpresaRepository localizacaoEmpresaRepository)
         {
             _empresaRepository = empresaRepository;
+            _localizacaoEmpresaRepository = localizacaoEmpresaRepository;
         }
 
         public List<empresa> ListarEmpresas()
@@ -68,12 +72,37 @@ namespace ServSegFacilitiesAPI.Application.Services
 
             // Execulta o end point.
             var response = await client.GetAsync($"https://brasilapi.com.br/api/cnpj/v1/{cnpj}");
-
             var empresaDTO = await response.Content.ReadFromJsonAsync<CriarEmpresaDTO>();
             if (empresaDTO == null)
                 throw new DomainException("Não foi possível consultar o CNPJ.");
 
             empresa empresa = EmpresaParaDTO.converterEmpresaParaDto(empresaDTO);
+
+            var cep = empresa.cep.Replace("-", "").Replace(".", "").Trim();
+
+            try
+            {
+
+                var responseLat = await client.GetAsync($"https://brasilapi.com.br/api/cep/v2/{cep}");
+                bool cepValido = responseLat.IsSuccessStatusCode;
+                CriarLocalizacaoEmpresaDTO locDto = await responseLat.Content.ReadFromJsonAsync<CriarLocalizacaoEmpresaDTO>();
+                Console.WriteLine($"CEP: {cep} \n{cepValido}");
+                Console.WriteLine($"Latitude: {locDto.Location.Coordinates.Latitude} \n Longitude: {locDto.Location.Coordinates.Latitude}");
+
+                _localizacaoEmpresaRepository.AdicionarLocalizacaoEmpresa(_empresaRepository.ObterPorCNPJ(empresa.cnpj).empresaId, new localizacaoEmpresa
+                {
+                    latitude = locDto.Location.Coordinates.Latitude,
+                    longitude = locDto.Location.Coordinates.Longitude,
+                    precisao = 100,
+                });
+
+            }
+            catch (Exception ex)
+            {
+
+                Console.Write(ex.ToString());
+            }
+
 
             empresa.cnpj = cnpj;
             empresa.nomeFantasia = String.IsNullOrWhiteSpace(empresa.nomeFantasia) ? empresa.razaoSocial : empresa.nomeFantasia;

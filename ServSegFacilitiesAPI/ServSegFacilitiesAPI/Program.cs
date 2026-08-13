@@ -61,9 +61,11 @@ builder.Services.AddDbContext<ServSeg_FacilitiesContext>(options =>
 // Registro de injeção de dependencia de DI
 // Repositories
 builder.Services.AddScoped<IEmpresaRepository, EmpresaRepository>();
+builder.Services.AddScoped<ILocalizacaoEmpresaRepository, LocalizacaoEmpresaRepository>();
 
 // Services
 builder.Services.AddScoped<EmpresaService>();
+builder.Services.AddScoped<LocalizacaoEmpresaService>();
 
 var app = builder.Build();
 
