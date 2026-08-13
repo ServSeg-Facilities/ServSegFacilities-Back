@@ -6,6 +6,8 @@ using Microsoft.OpenApi;
 using System.Text;
 using System.Text.Json.Serialization;
 using ServSegFacilitiesAPI.Application.Autenticacao;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi;
 using ServSegFacilitiesAPI.Application.Services;
 using ServSegFacilitiesAPI.Contexts;
 using ServSegFacilitiesAPI.Interfaces;
@@ -61,12 +63,18 @@ builder.Services.AddDbContext<ServSeg_FacilitiesContext>(options =>
  builder.Services.AddScoped<ITipoRegistro, TipoRegistroRepository>();
 builder.Services.AddScoped<IRegistroPonto, RegistroPontoRepository>();
 builder.Services.AddScoped<ICargoRepository, CargoRepository>();
+builder.Services.AddScoped<IEmpresaRepository, EmpresaRepository>();
 
 
+// Registros de Injeção de Dependência (DI)
 // Services
 builder.Services.AddScoped<TipoRegistroService>();
 builder.Services.AddScoped<RegistroPontoService>();
 builder.Services.AddScoped<CargoService>();
+builder.Services.AddScoped<EmpresaService>();
+builder.Services.AddScoped<UsuarioService>();
+builder.Services.AddScoped<GeradorTokenJwt>();
+builder.Services.AddScoped<AutenticacaoService>();
 
 // Configure the HTTP request pipeline.
 // Configure the HTTP request pipeline.
@@ -74,13 +82,8 @@ builder.Services.AddScoped<CargoService>();
 builder.Services.AddDbContext<ServSeg_FacilitiesContext>(options =>
     options.UseSqlServer(connectionString));
 
-// Registros de Injeção de Dependência (DI)
-builder.Services.AddScoped<UsuarioService>();
-builder.Services.AddScoped<GeradorTokenJwt>();
-builder.Services.AddScoped<AutenticacaoService>();
 
 // Configuração da Autenticação JWT Bearer
-
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -104,6 +107,8 @@ var app = builder.Build();
 
 app.UseCors("CorsPolicy");
 
+// Configure the HTTP request pipeline.
+// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

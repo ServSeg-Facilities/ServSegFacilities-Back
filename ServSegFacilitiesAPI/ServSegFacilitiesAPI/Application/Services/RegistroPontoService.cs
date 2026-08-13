@@ -8,14 +8,20 @@ namespace ServSegFacilitiesAPI.Application.Services
     public class RegistroPontoService
     {
         private readonly IRegistroPonto _repository;
-        public RegistroPontoService(IRegistroPonto repository)
+        private readonly IUsuarioRepository _usuarioRepository;
+        private readonly IEmpresaRepository _empresaRepository;
+
+        public RegistroPontoService(IRegistroPonto repository, IUsuarioRepository usuarioRepository, IEmpresaRepository empresaRepository)
         {
             _repository = repository;
+            _usuarioRepository = usuarioRepository;
+            _empresaRepository = empresaRepository;
         }
-        public void Adicionar(
-        int usuarioID,
-        AdicionarRegistroPonto dto)
+        public void Adicionar(int usuarioID, AdicionarRegistroPonto dto)
         {
+            usuario usuario = _usuarioRepository.BuscarPorId(usuarioID);
+            var empresa = _empresaRepository.ObterPorId(usuario.empresaId);
+
             // 1. Buscar último registro
             var ultimoRegistro =
                 _repository.BuscarUltimoRegistro(usuarioID);
