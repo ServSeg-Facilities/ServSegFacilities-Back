@@ -47,8 +47,7 @@ namespace ServSegFacilitiesAPI.Application.Services
                     bairro = emp.bairro,
                     cidade = emp.cidade,
                     estado = emp.estado,
-                    latitude = localizacao?.latitude ?? "null",
-                    longitude = localizacao?.longitude ?? "null"
+                    localizacaoEmpresa = emp.localizacaoEmpresa
                 };
             }).ToList();
 

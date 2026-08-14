@@ -30,9 +30,7 @@ namespace ServSegFacilitiesAPI.DTOs.EmpresaDTO
 
         public string estado { get; set; } = null!;
 
-        public string latitude { get; set; } = null!;
-
-        public string longitude { get; set; }
+        public virtual ICollection<localizacaoEmpresa> localizacaoEmpresa { get; set; } = new List<localizacaoEmpresa>();
 
     }
 }
