@@ -62,6 +62,64 @@ CREATE TABLE tipoRegistro (
 )
 GO
 
+  
+CREATE TABLE historicoRegistroPonto (
+    historicoId INT PRIMARY KEY IDENTITY(1,1),
+    registroPontoId INT NOT NULL,
+    usuarioId INT NOT NULL,
+    latitude FLOAT NOT NULL,
+    longitude FLOAT NOT NULL,
+    precisao FLOAT NOT NULL,
+    dataHoraPonto DATETIME NOT NULL,
+    status BIT NOT NULL,
+    tipoRegistroId INT NOT NULL,
+    dataHoraCriacaoHistorico DATETIME NOT NULL DEFAULT GETDATE()
+);
+GO
+
+ALTER TABLE historicoRegistroPonto 
+ADD CONSTRAINT FK_historico_usuario 
+FOREIGN KEY (usuarioId) REFERENCES usuario (usuarioId);
+GO
+
+ALTER TABLE historicoRegistroPonto 
+ADD CONSTRAINT FK_historico_tipoRegistro 
+FOREIGN KEY (tipoRegistroId) REFERENCES tipoRegistro (tipoRegistroId);
+GO
+
+
+CREATE TRIGGER trg_salvarHistoricoPonto
+ON registroPonto
+AFTER INSERT
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    INSERT INTO historicoRegistroPonto (
+        registroPontoId,
+        usuarioId,
+        latitude,
+        longitude,
+        precisao,
+        dataHoraPonto,
+        status,
+        tipoRegistroId,
+        dataHoraCriacaoHistorico
+    )
+    SELECT 
+        i.registroPontoId,
+        i.usuarioId,
+        i.latitude,
+        i.longitude,
+        i.precisao,
+        i.dataHoraPonto,
+        i.status,
+        i.tipoRegistroId,
+        GETDATE()
+    FROM inserted i;
+END;
+GO
+
 EXEC sp_addextendedproperty
 @name = N'Column_Description',
 @value = 'Sigla da UF',
