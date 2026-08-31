@@ -105,6 +105,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ServSegFacilitiesAPI.Controllers.HistoricoRegistroPontoController",
+    "Method": "Get",
+    "RelativePath": "api/HistoricoRegistroPonto",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ServSegFacilitiesAPI.Controllers.RegistroPontoController",
     "Method": "Adicionar",
     "RelativePath": "api/RegistroPonto",

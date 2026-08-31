@@ -20,6 +20,8 @@ public partial class ServSeg_FacilitiesContext : DbContext
 
     public virtual DbSet<empresa> empresa { get; set; }
 
+    public virtual DbSet<historicoRegistroPonto> historicoRegistroPonto { get; set; }
+
     public virtual DbSet<localizacaoEmpresa> localizacaoEmpresa { get; set; }
 
     public virtual DbSet<registroPonto> registroPonto { get; set; }
@@ -88,6 +90,26 @@ public partial class ServSeg_FacilitiesContext : DbContext
                 .IsUnicode(false);
         });
 
+        modelBuilder.Entity<historicoRegistroPonto>(entity =>
+        {
+            entity.HasKey(e => e.historicoId).HasName("PK__historic__22DB9B75AC63981E");
+
+            entity.Property(e => e.dataHoraCriacaoHistorico)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.dataHoraPonto).HasColumnType("datetime");
+
+            entity.HasOne(d => d.tipoRegistro).WithMany(p => p.historicoRegistroPonto)
+                .HasForeignKey(d => d.tipoRegistroId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_historico_tipoRegistro");
+
+            entity.HasOne(d => d.usuario).WithMany(p => p.historicoRegistroPonto)
+                .HasForeignKey(d => d.usuarioId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_historico_usuario");
+        });
+
         modelBuilder.Entity<localizacaoEmpresa>(entity =>
         {
             entity.HasKey(e => e.localizacaoEmpresaId).HasName("PK__localiza__B3AFECF800840F08");
@@ -109,6 +131,8 @@ public partial class ServSeg_FacilitiesContext : DbContext
         modelBuilder.Entity<registroPonto>(entity =>
         {
             entity.HasKey(e => e.registroPontoId).HasName("PK__registro__F46A4ACF051BC8BB");
+
+            entity.ToTable(tb => tb.HasTrigger("trg_salvarHistoricoPonto"));
 
             entity.Property(e => e.dataHoraPonto)
                 .HasDefaultValueSql("(getdate())")

@@ -61,12 +61,14 @@ builder.Services.AddDbContext<ServSeg_FacilitiesContext>(options =>
  builder.Services.AddScoped<ITipoRegistro, TipoRegistroRepository>();
 builder.Services.AddScoped<IRegistroPonto, RegistroPontoRepository>();
 builder.Services.AddScoped<ICargoRepository, CargoRepository>();
+builder.Services.AddScoped<IHistoricoRegistroPonto, HistoricoRegistroPontoRepository>();
 
 
 // Services
 builder.Services.AddScoped<TipoRegistroService>();
 builder.Services.AddScoped<RegistroPontoService>();
 builder.Services.AddScoped<CargoService>();
+builder.Services.AddScoped<HistoricoRegistroPontoService>();
 
 // Configure the HTTP request pipeline.
 // Configure the HTTP request pipeline.

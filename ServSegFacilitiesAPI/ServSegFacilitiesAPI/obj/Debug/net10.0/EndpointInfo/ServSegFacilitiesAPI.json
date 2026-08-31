@@ -178,6 +178,18 @@
         }
       }
     },
+    "/api/HistoricoRegistroPonto": {
+      "get": {
+        "tags": [
+          "HistoricoRegistroPonto"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/RegistroPonto": {
       "post": {
         "tags": [
@@ -635,6 +647,9 @@
     },
     {
       "name": "Cargos"
+    },
+    {
+      "name": "HistoricoRegistroPonto"
     },
     {
       "name": "RegistroPonto"
