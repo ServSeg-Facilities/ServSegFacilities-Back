@@ -12,9 +12,9 @@ namespace ServSegFacilitiesAPI.Application.Services
             _repository = repository;
         }
 
-        public async Task<List<ListarLogHistoricoRegistroPontoDto>> ObterHistoricoListagemAsync()
+        public async Task<List<ListarLogHistoricoRegistroPontoDto>> ObterHistoricoListagemAsync(int usuarioId)
         {
-            var historicos = await _repository.ListarTodos();
+            var historicos = await _repository.ListarPorUsuario(usuarioId);
 
             var dtos = historicos.Select(h => new ListarLogHistoricoRegistroPontoDto
             {

@@ -7,7 +7,7 @@ namespace ServSegFacilitiesAPI.Interfaces
     public interface IUsuarioRepository
     {
         Task<IEnumerable<usuario>> ListarTodos();
-        Task<usuario> BuscarPorId(int id);
+        usuario BuscarPorId(int id);
         Task Cadastrar(usuario novoUsuario);
         Task Atualizar(int id, usuario usuarioAtualizado);
         Task Deletar(int id);

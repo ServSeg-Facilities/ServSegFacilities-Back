@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ServSegFacilitiesAPI.Application.Services;
+using System.Security.Claims;
 
 namespace ServSegFacilitiesAPI.Controllers
 {
@@ -15,17 +17,19 @@ namespace ServSegFacilitiesAPI.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> Get()
         {
-            try
+            var usuarioIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value
+                              ?? User.FindFirst("usuarioId")?.Value;
+
+            if (!int.TryParse(usuarioIdClaim, out int usuarioId))
             {
-                var hisorico = await _service.ObterHistoricoListagemAsync();
-                return Ok(hisorico);
+                return Unauthorized("Usuário inválido no token.");
             }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new { mensagem = "Erro ao buscar historico: " + ex.Message });
-            }
+
+            var historico = await _service.ObterHistoricoListagemAsync(usuarioId);
+            return Ok(historico);
         }
     }
 }

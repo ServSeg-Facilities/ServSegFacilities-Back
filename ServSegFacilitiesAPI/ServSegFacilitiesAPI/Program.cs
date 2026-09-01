@@ -18,7 +18,6 @@ Env.Load();
 string connectionString = Environment.GetEnvironmentVariable("CONNECTION_STRING")!;
 
 // Controllers + Solução para evitar loop de JSON (Ciclos de Objeto)
-
 builder.Services.AddControllers().AddJsonOptions(options =>
 {
     options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
@@ -52,37 +51,31 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-//// Registrar DbContext com a conexão SQL Server scaffolded
+// Registrar DbContext
 builder.Services.AddDbContext<ServSeg_FacilitiesContext>(options =>
     options.UseSqlServer(connectionString));
 
-// Registro de injeção de dependencia de DI
 // Repositories
- builder.Services.AddScoped<ITipoRegistro, TipoRegistroRepository>();
+builder.Services.AddScoped<ITipoRegistro, TipoRegistroRepository>();
 builder.Services.AddScoped<IRegistroPonto, RegistroPontoRepository>();
 builder.Services.AddScoped<ICargoRepository, CargoRepository>();
 builder.Services.AddScoped<IHistoricoRegistroPonto, HistoricoRegistroPontoRepository>();
-
+builder.Services.AddScoped<IEmpresaRepository, EmpresaRepository>();
+builder.Services.AddScoped<ILocalizacaoEmpresaRepository, LocalizacaoEmpresaRepository>();
+builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 
 // Services
 builder.Services.AddScoped<TipoRegistroService>();
 builder.Services.AddScoped<RegistroPontoService>();
 builder.Services.AddScoped<CargoService>();
 builder.Services.AddScoped<HistoricoRegistroPontoService>();
-
-// Configure the HTTP request pipeline.
-// Configure the HTTP request pipeline.
-// Registrar DbContext
-builder.Services.AddDbContext<ServSeg_FacilitiesContext>(options =>
-    options.UseSqlServer(connectionString));
-
-// Registros de Injeção de Dependência (DI)
+builder.Services.AddScoped<EmpresaService>();
+builder.Services.AddScoped<LocalizacaoEmpresaService>();
 builder.Services.AddScoped<UsuarioService>();
 builder.Services.AddScoped<GeradorTokenJwt>();
 builder.Services.AddScoped<AutenticacaoService>();
 
 // Configuração da Autenticação JWT Bearer
-
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -106,6 +99,8 @@ var app = builder.Build();
 
 app.UseCors("CorsPolicy");
 
+// Configure the HTTP request pipeline.
+// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
