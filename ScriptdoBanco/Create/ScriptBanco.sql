@@ -1,15 +1,15 @@
-
 CREATE DATABASE ServSeg_Facilities;
 GO
 USE ServSeg_Facilities
 GO
+
 CREATE TABLE usuario (
   usuarioId INT PRIMARY KEY IDENTITY(1, 1),
   nome VARCHAR(100) NOT NULL,
-  senha VARCHAR(255) NOT NULL,
   email VARCHAR(150) UNIQUE NOT NULL,
   cargoId INT NOT NULL,
-  empresaId INT NOT NULL
+  empresaId INT NOT NULL,
+  senha VARBINARY(255) NOT NULL DEFAULT 0x
 )
 GO
 
@@ -48,11 +48,12 @@ GO
 CREATE TABLE registroPonto (
   registroPontoId INT PRIMARY KEY IDENTITY(1, 1),
   usuarioId INT NOT NULL,
-  latitude VARCHAR(15),
-  longitude VARCHAR(15),
+  latitude FLOAT NOT NULL,
+  longitude FLOAT NOT NULL,
   dataHoraPonto datetime NOT NULL DEFAULT getdate(),
   status BIT NOT NULL,
-  tipoRegistroId INT NOT NULL
+  tipoRegistroId INT NOT NULL,
+  precisao FLOAT NOT NULL DEFAULT 0
 )
 GO
 
@@ -62,18 +63,17 @@ CREATE TABLE tipoRegistro (
 )
 GO
 
-  
 CREATE TABLE historicoRegistroPonto (
-    historicoId INT PRIMARY KEY IDENTITY(1,1),
-    registroPontoId INT NOT NULL,
-    usuarioId INT NOT NULL,
-    latitude FLOAT NOT NULL,
-    longitude FLOAT NOT NULL,
-    precisao FLOAT NOT NULL,
-    dataHoraPonto DATETIME NOT NULL,
-    status BIT NOT NULL,
-    tipoRegistroId INT NOT NULL,
-    dataHoraCriacaoHistorico DATETIME NOT NULL DEFAULT GETDATE()
+  historicoId INT PRIMARY KEY IDENTITY(1, 1),
+  registroPontoId INT NOT NULL,
+  usuarioId INT NOT NULL,
+  latitude FLOAT NOT NULL,
+  longitude FLOAT NOT NULL,
+  precisao FLOAT NOT NULL,
+  dataHoraPonto DATETIME NOT NULL,
+  status BIT NOT NULL,
+  tipoRegistroId INT NOT NULL,
+  dataHoraCriacaoHistorico DATETIME NOT NULL DEFAULT GETDATE()
 );
 GO
 
@@ -86,7 +86,6 @@ ALTER TABLE historicoRegistroPonto
 ADD CONSTRAINT FK_historico_tipoRegistro 
 FOREIGN KEY (tipoRegistroId) REFERENCES tipoRegistro (tipoRegistroId);
 GO
-
 
 CREATE TRIGGER trg_salvarHistoricoPonto
 ON registroPonto
@@ -142,13 +141,3 @@ GO
 
 ALTER TABLE registroPonto ADD FOREIGN KEY (tipoRegistroId) REFERENCES tipoRegistro (tipoRegistroId)
 GO
-
-ALTER TABLE registroPonto
-ALTER COLUMN latitude FLOAT NOT NULL;
-
-ALTER TABLE registroPonto
-ALTER COLUMN longitude FLOAT NOT NULL;
-
-ALTER TABLE registroPonto
-ADD precisao FLOAT NOT NULL DEFAULT 0;
-
