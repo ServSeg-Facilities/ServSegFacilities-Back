@@ -25,88 +25,68 @@ namespace ServSegFacilitiesAPI.Application.Services
             _locRepository = locRepository;
         }
 
-        public registroPonto Adicionar(int usuarioID, AdicionarRegistroPonto dto)
+        public void Adicionar(int usuarioID, AdicionarRegistroPonto dto)
         {
             var usuario = _usuarioRepository.BuscarPorId(usuarioID)
                 ?? throw new DomainException("Usuário não encontrado.");
 
-            // 1. Validar Sequência de Entrada / Saída
+            var empresa = _empresaRepository.ObterPorId(usuario.empresaId)
+                ?? throw new DomainException("Empresa do usuário não encontrada.");
+
+            var localizacao = _locRepository.ObterPorEmpresaId(empresa.empresaId)
+                ?? throw new DomainException("Localização da empresa não cadastrada.");
+
+            if (dto.Precisao > 200)
+            {
+                throw new DomainException(
+                    $"A precisão do seu GPS está imprecisa. " +
+                    $"Precisão atual: {dto.Precisao:F2} metros. O limite é de 200 metros."
+                );
+            }
+
+            // 5. Validar Sequência de Entrada / Saída
             var ultimoRegistro = _repository.BuscarUltimoRegistro(usuarioID);
 
             if (ultimoRegistro == null)
             {
                 if (dto.TipoRegistroId != 1)
                 {
-                    throw new DomainException("Para registrar uma saída, é preciso primeiro registrar uma entrada.");
+                    throw new DomainException("O primeiro registro deve ser uma Entrada.");
                 }
             }
             else
             {
                 bool mesmoDia = ultimoRegistro.dataHoraPonto.Date == DateTime.Today;
-
-                if (dto.TipoRegistroId == 2) // Tentando registrar Saída
-                {
-                    if (ultimoRegistro.tipoRegistroId == 2 || !mesmoDia)
-                    {
-                        throw new DomainException("Para registrar uma saída, é preciso primeiro registrar uma entrada.");
-                    }
-                }
-                else if (dto.TipoRegistroId == 1) // Tentando registrar Entrada
-                {
-                    if (mesmoDia && ultimoRegistro.tipoRegistroId == 1)
-                    {
-                        throw new DomainException("Você já possui uma entrada registrada hoje. Para registrar novamente, registre a saída primeiro.");
-                    }
-                }
-                else if (mesmoDia && ultimoRegistro.tipoRegistroId == dto.TipoRegistroId)
+                if (mesmoDia && ultimoRegistro.tipoRegistroId == dto.TipoRegistroId)
                 {
                     throw new DomainException("Não é possível registrar o mesmo tipo de ponto duas vezes seguidas.");
                 }
             }
 
-            // 2. Validação de Raio de Distância OBRIGATÓRIA APENAS NA ENTRADA (TipoRegistroId == 1)
-            // No ponto de Saída (ou outros), o limitador de range NÃO deve existir (pode bater de qualquer lugar).
-            if (dto.TipoRegistroId == 1)
+            // 6. Converter Coordenadas da Empresa
+            if (!double.TryParse(localizacao.latitude, NumberStyles.Any, CultureInfo.InvariantCulture, out double latitudeEmpresa) ||
+                !double.TryParse(localizacao.longitude, NumberStyles.Any, CultureInfo.InvariantCulture, out double longitudeEmpresa))
             {
-                var empresa = _empresaRepository.ObterPorId(usuario.empresaId)
-                    ?? throw new DomainException("Empresa do usuário não encontrada.");
-
-                var localizacao = _locRepository.ObterPorEmpresaId(empresa.empresaId)
-                    ?? throw new DomainException("Localização da empresa não cadastrada.");
-
-                if (dto.Precisao > 200)
-                {
-                    throw new DomainException(
-                        $"A precisão do seu GPS está imprecisa. " +
-                        $"Precisão atual: {dto.Precisao:F2} metros. O limite é de 200 metros."
-                    );
-                }
-
-                // Converter Coordenadas da Empresa
-                if (!double.TryParse(localizacao.latitude, NumberStyles.Any, CultureInfo.InvariantCulture, out double latitudeEmpresa) ||
-                    !double.TryParse(localizacao.longitude, NumberStyles.Any, CultureInfo.InvariantCulture, out double longitudeEmpresa))
-                {
-                    throw new DomainException("Coordenadas da empresa estão em um formato inválido.");
-                }
-
-                // Validar Raio de Distância até a Empresa (50 metros)
-                double distancia = CalcularDistancia(
-                    dto.Latitude,
-                    dto.Longitude,
-                    latitudeEmpresa,
-                    longitudeEmpresa
-                );
-
-                if (distancia > 50)
-                {
-                    throw new DomainException(
-                        $"Você está fora da área permitida para registrar a Entrada. " +
-                        $"Distância até a empresa: {distancia:F2} metros. O limite é de 50 metros."
-                    );
-                }
+                throw new DomainException("Coordenadas da empresa estão em um formato inválido.");
             }
 
-            // 3. Salvar Registro sempre com data e hora atual do servidor
+            // 7. Validar Raio de Distância
+            double distancia = CalcularDistancia(
+                dto.Latitude,
+                dto.Longitude,
+                latitudeEmpresa,
+                longitudeEmpresa
+            );
+
+            if (distancia > 50)
+            {
+                throw new DomainException(
+                    $"Você está fora da área permitida. " +
+                    $"Distância até a empresa: {distancia:F2} metros."
+                );
+            }
+
+            // 8. Salvar Registro
             var registro = new registroPonto
             {
                 usuarioId = usuarioID,
@@ -119,7 +99,6 @@ namespace ServSegFacilitiesAPI.Application.Services
             };
 
             _repository.Adicionar(registro);
-            return registro;
         }
 
         private double CalcularDistancia(
@@ -143,11 +122,6 @@ namespace ServSegFacilitiesAPI.Application.Services
             double c = 2 * Math.Atan2(Math.Sqrt(a), Math.Sqrt(1 - a));
 
             return raioTerra * c;
-        }
-
-        public registroPonto? BuscarUltimoRegistro(int usuarioId)
-        {
-            return _repository.BuscarUltimoRegistro(usuarioId);
         }
     }
 }
