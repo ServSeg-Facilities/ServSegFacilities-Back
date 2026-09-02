@@ -53,7 +53,8 @@ CREATE TABLE registroPonto (
   latitude VARCHAR(15),
   longitude VARCHAR(15),
   dataHoraPonto datetime NOT NULL DEFAULT getdate(),
-  status BIT NOT NULL,
+  statusRegistroPonto BIT NOT NULL,
+  fotoPonto VARBINARY(MAX),
   tipoRegistroId INT NOT NULL
 )
 GO
