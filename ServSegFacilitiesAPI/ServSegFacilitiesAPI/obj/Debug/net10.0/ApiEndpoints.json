@@ -299,6 +299,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ServSegFacilitiesAPI.Controllers.RegistroPontoController",
+    "Method": "ObterStatusAtual",
+    "RelativePath": "api/RegistroPonto/StatusAtual",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ServSegFacilitiesAPI.Controllers.TipoRegistroController",
     "Method": "Listar",
     "RelativePath": "api/TipoRegistro",

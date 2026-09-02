@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ServSegFacilitiesAPI.Application.Services;
@@ -17,6 +17,45 @@ namespace ServSegFacilitiesAPI.Controllers
         public RegistroPontoController(RegistroPontoService service)
         {
             _service = service;
+        }
+
+        [Authorize]
+        [HttpGet("StatusAtual")]
+        public IActionResult ObterStatusAtual()
+        {
+            try
+            {
+                var usuarioIdClaim = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                if (usuarioIdClaim == null)
+                {
+                    return Unauthorized("Usuário não identificado.");
+                }
+
+                int usuarioId = int.Parse(usuarioIdClaim);
+                var ultimo = _service.BuscarUltimoRegistro(usuarioId);
+                var agora = DateTime.Now;
+
+                return Ok(new
+                {
+                    dataHoraAtual = agora,
+                    dataAtual = agora.ToString("dd/MM/yyyy"),
+                    horarioAtual = agora.ToString("HH:mm:ss"),
+                    diaSemana = agora.ToString("dddd", new System.Globalization.CultureInfo("pt-BR")),
+                    ultimoRegistro = ultimo == null ? null : new
+                    {
+                        ultimo.registroPontoId,
+                        ultimo.tipoRegistroId,
+                        ultimo.dataHoraPonto,
+                        horarioUltimoPonto = ultimo.dataHoraPonto.ToString("HH:mm:ss"),
+                        dataUltimoPonto = ultimo.dataHoraPonto.ToString("dd/MM/yyyy"),
+                        ultimo.status
+                    }
+                });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         [Authorize]
@@ -39,17 +78,23 @@ namespace ServSegFacilitiesAPI.Controllers
 
                 int usuarioId = int.Parse(usuarioIdClaim);
 
-                _service.Adicionar(usuarioId, dto);
+                var registro = _service.Adicionar(usuarioId, dto);
 
-                return Ok(
-                    "Ponto registrado com sucesso."
-                );
+                return Ok(new
+                {
+                    mensagem = "Ponto registrado com sucesso.",
+                    registroPontoId = registro.registroPontoId,
+                    usuarioId = registro.usuarioId,
+                    tipoRegistroId = registro.tipoRegistroId,
+                    dataHoraPonto = registro.dataHoraPonto,
+                    dataAtual = registro.dataHoraPonto.ToString("dd/MM/yyyy"),
+                    horarioAtual = registro.dataHoraPonto.ToString("HH:mm:ss")
+                });
             }
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
-
         }
     }
 }
