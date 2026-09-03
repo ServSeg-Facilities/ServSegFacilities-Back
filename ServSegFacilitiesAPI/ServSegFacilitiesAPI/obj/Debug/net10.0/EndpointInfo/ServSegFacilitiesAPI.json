@@ -470,6 +470,18 @@
         }
       }
     },
+    "/api/RegistroPonto/StatusAtual": {
+      "get": {
+        "tags": [
+          "RegistroPonto"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/RegistroPonto": {
       "post": {
         "tags": [
