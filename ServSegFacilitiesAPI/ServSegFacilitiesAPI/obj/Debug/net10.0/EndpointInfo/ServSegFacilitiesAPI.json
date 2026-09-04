@@ -482,6 +482,29 @@
         }
       }
     },
+    "/api/RegistroPonto/{id}/imagem": {
+      "get": {
+        "tags": [
+          "RegistroPonto"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/RegistroPonto": {
       "post": {
         "tags": [
@@ -489,19 +512,48 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/AdicionarRegistroPonto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/AdicionarRegistroPonto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/AdicionarRegistroPonto"
+                "type": "object",
+                "properties": {
+                  "Latitude": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "Longitude": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "TipoRegistroId": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Precisao": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "FotoPonto": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "Latitude": {
+                  "style": "form"
+                },
+                "Longitude": {
+                  "style": "form"
+                },
+                "TipoRegistroId": {
+                  "style": "form"
+                },
+                "Precisao": {
+                  "style": "form"
+                },
+                "FotoPonto": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -788,28 +840,6 @@
   },
   "components": {
     "schemas": {
-      "AdicionarRegistroPonto": {
-        "type": "object",
-        "properties": {
-          "latitude": {
-            "type": "number",
-            "format": "double"
-          },
-          "longitude": {
-            "type": "number",
-            "format": "double"
-          },
-          "tipoRegistroId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "precisao": {
-            "type": "number",
-            "format": "double"
-          }
-        },
-        "additionalProperties": false
-      },
       "AdicionarTipoRegistroDto": {
         "required": [
           "nomeTipoRegistro"

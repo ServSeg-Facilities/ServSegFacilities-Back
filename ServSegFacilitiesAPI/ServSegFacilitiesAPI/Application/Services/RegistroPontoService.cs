@@ -1,3 +1,4 @@
+using ServSegFacilitiesAPI.Application.Convertions;
 using ServSegFacilitiesAPI.Domains;
 using ServSegFacilitiesAPI.DTOs.RegistroPonto;
 using ServSegFacilitiesAPI.Exceptions;
@@ -83,8 +84,11 @@ namespace ServSegFacilitiesAPI.Application.Services
                 }
 
                 // Converter Coordenadas da Empresa
-                if (!double.TryParse(localizacao.latitude, NumberStyles.Any, CultureInfo.InvariantCulture, out double latitudeEmpresa) ||
-                    !double.TryParse(localizacao.longitude, NumberStyles.Any, CultureInfo.InvariantCulture, out double longitudeEmpresa))
+                string latEmpresaStr = localizacao.latitude?.Trim().Replace(',', '.') ?? string.Empty;
+                string lngEmpresaStr = localizacao.longitude?.Trim().Replace(',', '.') ?? string.Empty;
+
+                if (!double.TryParse(latEmpresaStr, NumberStyles.Any, CultureInfo.InvariantCulture, out double latitudeEmpresa) ||
+                    !double.TryParse(lngEmpresaStr, NumberStyles.Any, CultureInfo.InvariantCulture, out double longitudeEmpresa))
                 {
                     throw new DomainException("Coordenadas da empresa estão em um formato inválido.");
                 }
@@ -115,7 +119,9 @@ namespace ServSegFacilitiesAPI.Application.Services
                 precisao = dto.Precisao,
                 dataHoraPonto = DateTime.Now,
                 status = true,
-                tipoRegistroId = dto.TipoRegistroId
+                tipoRegistroId = dto.TipoRegistroId,
+                fotoPonto = ImagemParaBytes.ConverterImagem(dto.FotoPonto)
+ 
             };
 
             _repository.Adicionar(registro);
@@ -149,5 +155,16 @@ namespace ServSegFacilitiesAPI.Application.Services
 
             return raioTerra * c;
         }
+        public byte[] ObterImagem(int id)
+        {
+            byte[] imagem = _repository.ObterImagem(id);
+            if (imagem == null)
+            {
+                throw new DomainException("Imagem não encontrada.");
+            }
+            return imagem;
+        }
+
     }
+
 }

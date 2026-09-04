@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ServSegFacilitiesAPI.Application.Services;
 using ServSegFacilitiesAPI.DTOs.RegistroPonto;
+using ServSegFacilitiesAPI.Exceptions;
 using System.Security.Claims;
 
 namespace ServSegFacilitiesAPI.Controllers
@@ -58,9 +59,24 @@ namespace ServSegFacilitiesAPI.Controllers
             }
         }
 
+        [HttpGet("{id}/imagem")]
+        public IActionResult ObterImagem(int id)
+        {
+            try
+            {
+                var imagem = _service.ObterImagem(id);
+                return File(imagem, "image/jpeg");
+            }
+            catch (DomainException ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
+
         [Authorize]
         [HttpPost]
-        public IActionResult Adicionar(AdicionarRegistroPonto dto)
+        [Consumes("multipart/form-data")]
+        public IActionResult Adicionar([FromForm] AdicionarRegistroPonto dto)
         {
             try
             {

@@ -1,4 +1,5 @@
-﻿using ServSegFacilitiesAPI.Contexts;
+﻿using Microsoft.EntityFrameworkCore;
+using ServSegFacilitiesAPI.Contexts;
 using ServSegFacilitiesAPI.Domains;
 using ServSegFacilitiesAPI.Interfaces;
 
@@ -27,6 +28,15 @@ namespace ServSegFacilitiesAPI.Repositories
                 .Where(r => r.usuarioId == usuarioID)
                 .OrderByDescending(r => r.dataHoraPonto)
                 .FirstOrDefault();
+        }
+        public byte[] ObterImagem(int id)
+        {
+            var registroPonto = _context.registroPonto
+                .Where(r => r.registroPontoId == id)
+                .Select(p => p.fotoPonto)
+                .FirstOrDefault();
+
+            return registroPonto;
         }
     }
 }

@@ -291,8 +291,44 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "dto",
-        "Type": "ServSegFacilitiesAPI.DTOs.RegistroPonto.AdicionarRegistroPonto",
+        "Name": "Latitude",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
+        "Name": "Longitude",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
+        "Name": "TipoRegistroId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Precisao",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
+        "Name": "FotoPonto",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServSegFacilitiesAPI.Controllers.RegistroPontoController",
+    "Method": "ObterImagem",
+    "RelativePath": "api/RegistroPonto/{id}/imagem",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

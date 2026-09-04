@@ -15,7 +15,7 @@ public partial class usuario
 
     public int empresaId { get; set; }
 
-    public byte[]? senha { get; set; }
+    public byte[] senha { get; set; } = null!;
 
     public virtual cargo cargo { get; set; } = null!;
 

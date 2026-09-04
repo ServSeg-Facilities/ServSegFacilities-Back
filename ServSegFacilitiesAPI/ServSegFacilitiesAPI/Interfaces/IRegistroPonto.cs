@@ -14,6 +14,8 @@ namespace ServSegFacilitiesAPI.Interfaces
         //registroPonto BuscarPorID(int id);
         //registroPonto BuscarPorData(DateTime data);
         void Adicionar(registroPonto registroPonto);
+        byte[] ObterImagem(int id);
+
         registroPonto? BuscarUltimoRegistro(int usuarioID);
 
     }

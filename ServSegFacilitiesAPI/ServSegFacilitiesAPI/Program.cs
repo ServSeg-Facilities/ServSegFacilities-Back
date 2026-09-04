@@ -13,6 +13,11 @@ using ServSegFacilitiesAPI.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Configurar cultura invariante para garantir parsing correto de coordenadas decimais com ponto ou vírgula
+var defaultCulture = System.Globalization.CultureInfo.InvariantCulture;
+System.Globalization.CultureInfo.DefaultThreadCurrentCulture = defaultCulture;
+System.Globalization.CultureInfo.DefaultThreadCurrentUICulture = defaultCulture;
+
 // Carregar variáveis do arquivo .env
 Env.Load();
 string connectionString = Environment.GetEnvironmentVariable("CONNECTION_STRING")!;

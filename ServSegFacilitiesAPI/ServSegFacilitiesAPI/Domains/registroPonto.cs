@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 namespace ServSegFacilitiesAPI.Domains;
@@ -20,6 +20,8 @@ public partial class registroPonto
     public int tipoRegistroId { get; set; }
 
     public double precisao { get; set; }
+
+    public byte[]? fotoPonto { get; set; }
 
     public virtual tipoRegistro tipoRegistro { get; set; } = null!;
 
