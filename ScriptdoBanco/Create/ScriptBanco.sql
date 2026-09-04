@@ -50,8 +50,8 @@ GO
 CREATE TABLE registroPonto (
   registroPontoId INT PRIMARY KEY IDENTITY(1, 1),
   usuarioId INT NOT NULL,
-  latitude VARCHAR(15),
-  longitude VARCHAR(15),
+  latitude FLOAT NOT NULL,
+  longitude FLOAT NOT NULL,
   dataHoraPonto datetime NOT NULL DEFAULT getdate(),
   statusRegistroPonto BIT NOT NULL,
   fotoPonto VARBINARY(MAX),
