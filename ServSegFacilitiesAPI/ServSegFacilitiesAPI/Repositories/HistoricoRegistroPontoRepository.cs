@@ -14,16 +14,21 @@ namespace ServSegFacilitiesAPI.Repositories
             _context = context;
         }
 
-        public async Task<List<historicoRegistroPonto>> ListarPorUsuario(int usuarioId)
+        public List<historicoRegistroPonto> ListarPorUsuario(int usuarioId)
         {
-            return await _context.historicoRegistroPonto
-                .Include(h => h.usuario)
-                    .ThenInclude(u => u.empresa)
-                .Include(h => h.tipoRegistro)
-                .Where(h => h.usuarioId == usuarioId)
-                .AsNoTracking()
-                .OrderByDescending(h => h.dataHoraPonto)
-                .ToListAsync();
+            return _context.historicoRegistroPonto
+                                            .Include(h => h.registroPontoEntrada)
+                                                .ThenInclude(r => r.usuario)
+                                                    .ThenInclude(u => u.empresa)
+                                            .Include(h => h.registroPontoSaida)
+                                            .Where(h => h.registroPontoEntrada.usuarioId == usuarioId)
+                                            .OrderByDescending(h => h.registroPontoEntrada.dataHoraPonto)
+                                            .ToList();
+        }
+
+        public historicoRegistroPonto ObterHistoricoPorId(int historicoid)
+        {
+            return _context.historicoRegistroPonto.Find(historicoid);
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿using ServSegFacilitiesAPI.Domains;
+using ServSegFacilitiesAPI.Domains;
 
 namespace ServSegFacilitiesAPI.DTOs.RegistroPonto
 {
@@ -10,5 +10,6 @@ namespace ServSegFacilitiesAPI.DTOs.RegistroPonto
 
         public int TipoRegistroId { get; set; }
         public double Precisao { get; set; }
+        public IFormFile FotoPonto { get; set; } = null!;
     }
 }

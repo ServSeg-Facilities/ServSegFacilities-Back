@@ -10,10 +10,13 @@ namespace ServSegFacilitiesAPI.Interfaces
         //adicionar
         //remover temporario
 
-        //List<registroPonto> Listar();
+        List<registroPonto> Listar();
+        List<registroPonto> ListarRegistrosPorUsuario(int id);
         //registroPonto BuscarPorID(int id);
         //registroPonto BuscarPorData(DateTime data);
         void Adicionar(registroPonto registroPonto);
+        byte[] ObterImagem(int id);
+
         registroPonto? BuscarUltimoRegistro(int usuarioID);
 
     }

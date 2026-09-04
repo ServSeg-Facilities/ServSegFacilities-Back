@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ServSegFacilitiesAPI.Application.Services;
+using ServSegFacilitiesAPI.DTOs.LogHistoricoRegistroPontoDto;
+using ServSegFacilitiesAPI.Exceptions;
 using System.Security.Claims;
 
 namespace ServSegFacilitiesAPI.Controllers
@@ -18,7 +20,7 @@ namespace ServSegFacilitiesAPI.Controllers
 
         [HttpGet]
         [Authorize]
-        public async Task<IActionResult> Get()
+        public IActionResult Get()
         {
             var usuarioIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value
                               ?? User.FindFirst("usuarioId")?.Value;
@@ -28,8 +30,22 @@ namespace ServSegFacilitiesAPI.Controllers
                 return Unauthorized("Usuário inválido no token.");
             }
 
-            var historico = await _service.ObterHistoricoListagemAsync(usuarioId);
+            var historico = _service.ObterHistoricoListagem(usuarioId);
             return Ok(historico);
+        }
+
+        [HttpGet("ObterHistoricoPorId/{historicoId}")]
+        [Authorize]
+        public ActionResult<ListarLogHistoricoRegistroPontoDto> ObterHistoricoPorId(int historicoId)
+        {
+            try
+            {
+                return Ok(_service.ObterHistoricoListagem(historicoId));
+            }
+            catch (DomainException ex)
+            {
+                return NotFound(ex.Message);
+            }
         }
     }
 }

@@ -15,13 +15,11 @@ public partial class usuario
 
     public int empresaId { get; set; }
 
-    public byte[]? senha { get; set; }
+    public byte[] senha { get; set; } = null!;
 
     public virtual cargo cargo { get; set; } = null!;
 
     public virtual empresa empresa { get; set; } = null!;
-
-    public virtual ICollection<historicoRegistroPonto> historicoRegistroPonto { get; set; } = new List<historicoRegistroPonto>();
 
     public virtual ICollection<registroPonto> registroPonto { get; set; } = new List<registroPonto>();
 }

@@ -9,7 +9,5 @@ public partial class tipoRegistro
 
     public string nomeTipoRegistro { get; set; } = null!;
 
-    public virtual ICollection<historicoRegistroPonto> historicoRegistroPonto { get; set; } = new List<historicoRegistroPonto>();
-
     public virtual ICollection<registroPonto> registroPonto { get; set; } = new List<registroPonto>();
 }
