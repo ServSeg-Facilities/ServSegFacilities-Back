@@ -26,9 +26,14 @@ namespace ServSegFacilitiesAPI.Repositories
                                             .ToList();
         }
 
-        public historicoRegistroPonto ObterHistoricoPorId(int historicoid)
+        public historicoRegistroPonto ObterHistoricoPorId(int historicoId)
         {
-            return _context.historicoRegistroPonto.Find(historicoid);
+            return _context.historicoRegistroPonto
+                                           .Include(h => h.registroPontoEntrada)
+                                               .ThenInclude(r => r.usuario)
+                                                   .ThenInclude(u => u.empresa)
+                                           .Include(h => h.registroPontoSaida)
+                                           .FirstOrDefault(h => h.historicoId == historicoId);
         }
     }
 }
