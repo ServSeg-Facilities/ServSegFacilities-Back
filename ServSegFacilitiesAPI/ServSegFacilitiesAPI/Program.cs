@@ -114,7 +114,7 @@ if (app.Environment.IsDevelopment())
 
 // Estava dando erro de login por conta do auto redirecionamento de protocolo https
 // Após comentar esta linha voltou a funcionar
-// app.UseHttpsRedirection();
+ //app.UseHttpsRedirection();
 
 app.UseAuthentication();
 app.UseAuthorization();
