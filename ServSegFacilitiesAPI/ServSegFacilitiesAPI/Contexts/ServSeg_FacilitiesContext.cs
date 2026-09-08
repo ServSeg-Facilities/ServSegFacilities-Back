@@ -32,13 +32,13 @@ public partial class ServSeg_FacilitiesContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=ServSeg_Facilities;Trusted_Connection=True;TrustServerCertificate=True");
+        => optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=ServSeg_Facilities;Trusted_Connection=true;TrustServerCertificate=true");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<cargo>(entity =>
         {
-            entity.HasKey(e => e.cargoId).HasName("PK__cargo__7E9F06A555767DA0");
+            entity.HasKey(e => e.cargoId).HasName("PK__cargo__7E9F06A5A48E4FAA");
 
             entity.Property(e => e.nomeCargo)
                 .HasMaxLength(50)
@@ -47,9 +47,9 @@ public partial class ServSeg_FacilitiesContext : DbContext
 
         modelBuilder.Entity<empresa>(entity =>
         {
-            entity.HasKey(e => e.empresaId).HasName("PK__empresa__C0E670791E9A12A1");
+            entity.HasKey(e => e.empresaId).HasName("PK__empresa__C0E670799B6790B0");
 
-            entity.HasIndex(e => e.cnpj, "UQ__empresa__35BD3E4878DABFAB").IsUnique();
+            entity.HasIndex(e => e.cnpj, "UQ__empresa__35BD3E4883A638B5").IsUnique();
 
             entity.Property(e => e.bairro)
                 .HasMaxLength(100)
@@ -92,27 +92,18 @@ public partial class ServSeg_FacilitiesContext : DbContext
 
         modelBuilder.Entity<historicoRegistroPonto>(entity =>
         {
-            entity.HasKey(e => e.historicoId).HasName("PK__historic__22DB9B75AC63981E");
+            entity.HasKey(e => e.historicoId).HasName("PK__historic__22DB9B754B653080");
 
-            entity.Property(e => e.dataHoraCriacaoHistorico)
-                .HasDefaultValueSql("(getdate())")
-                .HasColumnType("datetime");
-            entity.Property(e => e.dataHoraPonto).HasColumnType("datetime");
+            entity.HasOne(d => d.registroPontoEntrada).WithMany(p => p.historicoRegistroPontoregistroPontoEntrada)
+                .HasForeignKey(d => d.registroPontoEntradaId)
+                .OnDelete(DeleteBehavior.ClientSetNull);
 
-            entity.HasOne(d => d.tipoRegistro).WithMany(p => p.historicoRegistroPonto)
-                .HasForeignKey(d => d.tipoRegistroId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_historico_tipoRegistro");
-
-            entity.HasOne(d => d.usuario).WithMany(p => p.historicoRegistroPonto)
-                .HasForeignKey(d => d.usuarioId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_historico_usuario");
+            entity.HasOne(d => d.registroPontoSaida).WithMany(p => p.historicoRegistroPontoregistroPontoSaida).HasForeignKey(d => d.registroPontoSaidaId);
         });
 
         modelBuilder.Entity<localizacaoEmpresa>(entity =>
         {
-            entity.HasKey(e => e.localizacaoEmpresaId).HasName("PK__localiza__B3AFECF800840F08");
+            entity.HasKey(e => e.localizacaoEmpresaId).HasName("PK__localiza__B3AFECF8131867C3");
 
             entity.Property(e => e.latitude)
                 .HasMaxLength(15)
@@ -124,15 +115,14 @@ public partial class ServSeg_FacilitiesContext : DbContext
 
             entity.HasOne(d => d.empresa).WithMany(p => p.localizacaoEmpresa)
                 .HasForeignKey(d => d.empresaId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__localizac__empre__6B24EA82");
+                .OnDelete(DeleteBehavior.ClientSetNull);
         });
 
         modelBuilder.Entity<registroPonto>(entity =>
         {
-            entity.HasKey(e => e.registroPontoId).HasName("PK__registro__F46A4ACF051BC8BB");
+            entity.HasKey(e => e.registroPontoId).HasName("PK__registro__F46A4ACFDC54DABF");
 
-            entity.ToTable(tb => tb.HasTrigger("trg_salvarHistoricoPonto"));
+            entity.ToTable(tb => tb.HasTrigger("TR_registroPonto_Historico"));
 
             entity.Property(e => e.dataHoraPonto)
                 .HasDefaultValueSql("(getdate())")
@@ -141,17 +131,17 @@ public partial class ServSeg_FacilitiesContext : DbContext
             entity.HasOne(d => d.tipoRegistro).WithMany(p => p.registroPonto)
                 .HasForeignKey(d => d.tipoRegistroId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__registroP__tipoR__6D0D32F4");
+                .HasConstraintName("FK_RegistroPonto_tipoRegistro_tipoRegistroId");
 
             entity.HasOne(d => d.usuario).WithMany(p => p.registroPonto)
                 .HasForeignKey(d => d.usuarioId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__registroP__usuar__6C190EBB");
+                .HasConstraintName("FK_RegistroPonto_usuario_usuarioId");
         });
 
         modelBuilder.Entity<tipoRegistro>(entity =>
         {
-            entity.HasKey(e => e.tipoRegistroId).HasName("PK__tipoRegi__2058F4DC6519BD82");
+            entity.HasKey(e => e.tipoRegistroId).HasName("PK__tipoRegi__2058F4DCC2F460BE");
 
             entity.Property(e => e.nomeTipoRegistro)
                 .HasMaxLength(30)
@@ -160,9 +150,9 @@ public partial class ServSeg_FacilitiesContext : DbContext
 
         modelBuilder.Entity<usuario>(entity =>
         {
-            entity.HasKey(e => e.usuarioId).HasName("PK__usuario__A5B1AB8EB7978B33");
+            entity.HasKey(e => e.usuarioId).HasName("PK__usuario__A5B1AB8E809B4469");
 
-            entity.HasIndex(e => e.email, "UQ__usuario__AB6E61647D30917E").IsUnique();
+            entity.HasIndex(e => e.email, "UQ__usuario__AB6E616404EE0C5D").IsUnique();
 
             entity.Property(e => e.email)
                 .HasMaxLength(150)
@@ -176,13 +166,11 @@ public partial class ServSeg_FacilitiesContext : DbContext
 
             entity.HasOne(d => d.cargo).WithMany(p => p.usuario)
                 .HasForeignKey(d => d.cargoId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__usuario__cargoId__693CA210");
+                .OnDelete(DeleteBehavior.ClientSetNull);
 
             entity.HasOne(d => d.empresa).WithMany(p => p.usuario)
                 .HasForeignKey(d => d.empresaId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__usuario__empresa__6A30C649");
+                .OnDelete(DeleteBehavior.ClientSetNull);
         });
 
         OnModelCreatingPartial(modelBuilder);

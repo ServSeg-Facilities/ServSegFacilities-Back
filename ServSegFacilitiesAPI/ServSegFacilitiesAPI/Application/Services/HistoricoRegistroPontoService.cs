@@ -1,4 +1,6 @@
-﻿using ServSegFacilitiesAPI.DTOs.LogHistoricoRegistroPontoDto;
+﻿using ServSegFacilitiesAPI.Domains;
+using ServSegFacilitiesAPI.DTOs.LogHistoricoRegistroPontoDto;
+using ServSegFacilitiesAPI.Exceptions;
 using ServSegFacilitiesAPI.Interfaces;
 
 namespace ServSegFacilitiesAPI.Application.Services
@@ -12,25 +14,40 @@ namespace ServSegFacilitiesAPI.Application.Services
             _repository = repository;
         }
 
-        public async Task<List<ListarLogHistoricoRegistroPontoDto>> ObterHistoricoListagemAsync(int usuarioId)
+        private ListarLogHistoricoRegistroPontoDto converterHistoricoParaDto(historicoRegistroPonto historico)
         {
-            var historicos = await _repository.ListarPorUsuario(usuarioId);
-
-            var dtos = historicos.Select(h => new ListarLogHistoricoRegistroPontoDto
+            return new ListarLogHistoricoRegistroPontoDto
             {
-                HistoricoId = h.historicoId,
-                RegistroPontoId = h.registroPontoId,
-                NomeUsuario = h.usuario?.nome ?? string.Empty,
-                NomeEmpresa = h.usuario?.empresa?.razaoSocial ?? string.Empty,
-                TipoRegistro = h.tipoRegistro?.nomeTipoRegistro ?? string.Empty,
-                DataHoraPonto = h.dataHoraPonto,
-                Latitude = h.latitude,
-                Longitude = h.longitude,
-                Precisao = h.precisao,
-                Status = h.status
-            }).ToList();
+                historicoId = historico.historicoId,
+                registroPontoEntradaId = historico.registroPontoEntradaId,
+                registroPontoSaidaId = historico.registroPontoSaidaId,
+                nomeUsuario = historico.registroPontoEntrada.usuario.nome ?? string.Empty,
+                nomeEmpresa = historico.registroPontoEntrada.usuario.empresa.razaoSocial ?? string.Empty,
+                dataHoraPontoEntrada = historico.registroPontoEntrada.dataHoraPonto,
+                dataHoraPontoSaida = historico.registroPontoSaida?.dataHoraPonto,
+                latitudeEntrada = historico.registroPontoEntrada.latitude,
+                latitudeSaida = historico.registroPontoSaida?.latitude,
+                longitudeEntrada = historico.registroPontoEntrada.longitude,
+                longitudeSaida = historico.registroPontoSaida?.longitude,
+            };
+        }
 
-            return dtos;
+        public List<ListarLogHistoricoRegistroPontoDto> ObterHistoricoListagem(int usuarioId)
+        {
+            List<historicoRegistroPonto> historicos = _repository.ListarPorUsuario(usuarioId);
+
+            if (historicos.Count <= 0)
+                throw new DomainException("Nenhum registro encontrado!");
+
+            return historicos.Select(hr => converterHistoricoParaDto(hr)).ToList();
+        }
+
+        public ListarLogHistoricoRegistroPontoDto ObterHistoricoPorId(int historicoId)
+        {
+            historicoRegistroPonto historico = _repository.ObterHistoricoPorId(historicoId)
+                ?? throw new DomainException("Nenhum historíco localizado!");
+
+            return converterHistoricoParaDto(historico);
         }
     }
 }

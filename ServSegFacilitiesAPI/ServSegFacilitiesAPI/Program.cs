@@ -112,7 +112,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+// Estava dando erro de login por conta do auto redirecionamento de protocolo https
+// Após comentar esta linha voltou a funcionar
+// app.UseHttpsRedirection();
 
 app.UseAuthentication();
 app.UseAuthorization();

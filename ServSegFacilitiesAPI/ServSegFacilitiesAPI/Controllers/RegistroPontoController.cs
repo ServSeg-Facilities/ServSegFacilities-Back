@@ -1,8 +1,11 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Microsoft.EntityFrameworkCore.Query;
 using ServSegFacilitiesAPI.Application.Services;
 using ServSegFacilitiesAPI.DTOs.RegistroPonto;
+using ServSegFacilitiesAPI.DTOs.RegistroPontoDto;
 using ServSegFacilitiesAPI.Exceptions;
 using System.Security.Claims;
 
@@ -18,6 +21,39 @@ namespace ServSegFacilitiesAPI.Controllers
         public RegistroPontoController(RegistroPontoService service)
         {
             _service = service;
+        }
+
+        [Authorize]
+        [HttpGet]
+        public ActionResult<List<ListarRegistrosDto>> Listar()
+        {
+            try
+            {
+                return Ok(_service.Listar());
+            }
+            catch (DomainException ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
+
+        [Authorize]
+        [HttpGet("ObterPorUsuario")]
+        public ActionResult<List<ListarRegistrosDto>> ListarPorUsuario()
+        {
+            try
+            {
+                var usuarioClaim = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                if (usuarioClaim == null)
+                    return Unauthorized("Usuário não identificado.");
+
+                int usuarioId = int.Parse(usuarioClaim);
+                return Ok(_service.ObterRegistrosPorUsuario(usuarioId));
+            }
+            catch (DomainException ex)
+            {
+                return NotFound(ex.Message);
+            }
         }
 
         [Authorize]
@@ -49,7 +85,7 @@ namespace ServSegFacilitiesAPI.Controllers
                         ultimo.dataHoraPonto,
                         horarioUltimoPonto = ultimo.dataHoraPonto.ToString("HH:mm:ss"),
                         dataUltimoPonto = ultimo.dataHoraPonto.ToString("dd/MM/yyyy"),
-                        ultimo.status
+                        ultimo.statusRegistroPonto
                     }
                 });
             }

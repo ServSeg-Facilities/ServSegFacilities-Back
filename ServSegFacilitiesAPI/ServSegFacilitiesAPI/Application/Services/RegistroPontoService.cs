@@ -1,6 +1,8 @@
+using Microsoft.Extensions.Primitives;
 using ServSegFacilitiesAPI.Application.Convertions;
 using ServSegFacilitiesAPI.Domains;
 using ServSegFacilitiesAPI.DTOs.RegistroPonto;
+using ServSegFacilitiesAPI.DTOs.RegistroPontoDto;
 using ServSegFacilitiesAPI.Exceptions;
 using ServSegFacilitiesAPI.Interfaces;
 using System.Globalization;
@@ -24,6 +26,40 @@ namespace ServSegFacilitiesAPI.Application.Services
             _usuarioRepository = usuarioRepository;
             _empresaRepository = empresaRepository;
             _locRepository = locRepository;
+        }
+
+        private ListarRegistrosDto ConverterRegistroParaDto(registroPonto registro)
+        {
+            empresa empresaBuscada = _empresaRepository.ObterPorCNPJ(registro.usuario.empresa.cnpj) ?? throw new DomainException("Erro, ponto feito sem nenhuma empresa relacionada!");
+
+            return new ListarRegistrosDto
+            {
+                registroPontoId = registro.registroPontoId,
+                nomeUsuario = registro.usuario.nome,
+                nomeEmpresa = empresaBuscada.nomeFantasia,
+                tipoRegistro = registro.tipoRegistro.nomeTipoRegistro,
+                latitude = registro.latitude,
+                logitude = registro.longitude,
+                dataHoraPonto = registro.dataHoraPonto,
+                statusRegistroPonto = registro.statusRegistroPonto,
+                tipoRegistroId = registro.tipoRegistroId,
+            };
+        }
+
+        public List<ListarRegistrosDto> Listar()
+        {
+            List<registroPonto> registros = _repository.Listar()
+                ?? throw new DomainException("Nenhum registro encontrado!");
+
+            return registros.Select(r => ConverterRegistroParaDto(r)).ToList();
+        }
+
+        public List<ListarRegistrosDto> ObterRegistrosPorUsuario(int id)
+        {
+            List<registroPonto> registrosUsu = _repository.ListarRegistrosPorUsuario(id)
+                ?? throw new DomainException("Nenhum registro encontrado!");
+
+            return registrosUsu.Select(ru => ConverterRegistroParaDto(ru)).ToList();
         }
 
         public registroPonto Adicionar(int usuarioID, AdicionarRegistroPonto dto)
@@ -116,12 +152,10 @@ namespace ServSegFacilitiesAPI.Application.Services
                 usuarioId = usuarioID,
                 latitude = dto.Latitude,
                 longitude = dto.Longitude,
-                precisao = dto.Precisao,
-                dataHoraPonto = DateTime.Now,
-                status = true,
+                statusRegistroPonto = true,
                 tipoRegistroId = dto.TipoRegistroId,
                 fotoPonto = ImagemParaBytes.ConverterImagem(dto.FotoPonto)
- 
+
             };
 
             _repository.Adicionar(registro);

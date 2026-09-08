@@ -4,6 +4,7 @@ namespace ServSegFacilitiesAPI.Interfaces
 {
     public interface IHistoricoRegistroPonto
     {
-        Task<List<historicoRegistroPonto>> ListarPorUsuario(int usuarioId);
+        List<historicoRegistroPonto> ListarPorUsuario(int usuarioId);
+        historicoRegistroPonto ObterHistoricoPorId(int historicoId);
     }
 }
