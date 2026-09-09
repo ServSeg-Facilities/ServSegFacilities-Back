@@ -22,7 +22,7 @@ System.Globalization.CultureInfo.DefaultThreadCurrentUICulture = defaultCulture;
 try { Env.Load(); } catch { }
 string connectionString = Environment.GetEnvironmentVariable("CONNECTION_STRING")
     ?? builder.Configuration.GetConnectionString("DefaultConnection")
-    ?? "Host=aws-0-us-west-2.pooler.supabase.com;Port=5432;Database=postgres;Username=postgres.cdjbpblojmqqygapooch;Password=euamosenaiparasempre;SSL Mode=Require;Trust Server Certificate=true;";
+    ?? throw new InvalidOperationException("A Connection String não foi configurada. Defina a variável de ambiente 'CONNECTION_STRING' (no Railway ou arquivo .env local).");
 
 // Controllers + Solução para evitar loop de JSON (Ciclos de Objeto)
 builder.Services.AddControllers().AddJsonOptions(options =>

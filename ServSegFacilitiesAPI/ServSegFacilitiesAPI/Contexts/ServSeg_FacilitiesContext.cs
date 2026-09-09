@@ -34,9 +34,11 @@ public partial class ServSeg_FacilitiesContext : DbContext
     {
         if (!optionsBuilder.IsConfigured)
         {
-            var connectionString = Environment.GetEnvironmentVariable("CONNECTION_STRING")
-                ?? "Host=aws-0-us-west-2.pooler.supabase.com;Port=5432;Database=postgres;Username=postgres.cdjbpblojmqqygapooch;Password=euamosenaiparasempre;SSL Mode=Require;Trust Server Certificate=true;";
-            optionsBuilder.UseNpgsql(connectionString);
+            var connectionString = Environment.GetEnvironmentVariable("CONNECTION_STRING");
+            if (!string.IsNullOrWhiteSpace(connectionString))
+            {
+                optionsBuilder.UseNpgsql(connectionString);
+            }
         }
     }
 
