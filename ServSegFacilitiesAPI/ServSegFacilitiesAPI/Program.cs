@@ -18,9 +18,11 @@ var defaultCulture = System.Globalization.CultureInfo.InvariantCulture;
 System.Globalization.CultureInfo.DefaultThreadCurrentCulture = defaultCulture;
 System.Globalization.CultureInfo.DefaultThreadCurrentUICulture = defaultCulture;
 
-// Carregar variáveis do arquivo .env
-Env.Load();
-string connectionString = Environment.GetEnvironmentVariable("CONNECTION_STRING")!;
+// Carregar variáveis do arquivo .env se existir
+try { Env.Load(); } catch { }
+string connectionString = Environment.GetEnvironmentVariable("CONNECTION_STRING")
+    ?? builder.Configuration.GetConnectionString("DefaultConnection")
+    ?? "Host=aws-0-us-west-2.pooler.supabase.com;Port=5432;Database=postgres;Username=postgres.cdjbpblojmqqygapooch;Password=euamosenaiparasempre;SSL Mode=Require;Trust Server Certificate=true;";
 
 // Controllers + Solução para evitar loop de JSON (Ciclos de Objeto)
 builder.Services.AddControllers().AddJsonOptions(options =>
@@ -58,7 +60,7 @@ builder.Services.AddSwaggerGen(c =>
 
 // Registrar DbContext
 builder.Services.AddDbContext<ServSeg_FacilitiesContext>(options =>
-    options.UseSqlServer(connectionString));
+    options.UseNpgsql(connectionString));
 
 // Repositories
 builder.Services.AddScoped<ITipoRegistro, TipoRegistroRepository>();

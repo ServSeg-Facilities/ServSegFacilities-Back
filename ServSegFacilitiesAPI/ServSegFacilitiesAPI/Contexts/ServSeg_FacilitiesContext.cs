@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using ServSegFacilitiesAPI.Domains;
@@ -31,8 +31,14 @@ public partial class ServSeg_FacilitiesContext : DbContext
     public virtual DbSet<usuario> usuario { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=ServSeg_Facilities;Trusted_Connection=true;TrustServerCertificate=true");
+    {
+        if (!optionsBuilder.IsConfigured)
+        {
+            var connectionString = Environment.GetEnvironmentVariable("CONNECTION_STRING")
+                ?? "Host=aws-0-us-west-2.pooler.supabase.com;Port=5432;Database=postgres;Username=postgres.cdjbpblojmqqygapooch;Password=euamosenaiparasempre;SSL Mode=Require;Trust Server Certificate=true;";
+            optionsBuilder.UseNpgsql(connectionString);
+        }
+    }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -125,8 +131,7 @@ public partial class ServSeg_FacilitiesContext : DbContext
             entity.ToTable(tb => tb.HasTrigger("TR_registroPonto_Historico"));
 
             entity.Property(e => e.dataHoraPonto)
-                .HasDefaultValueSql("(getdate())")
-                .HasColumnType("datetime");
+                .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
             entity.HasOne(d => d.tipoRegistro).WithMany(p => p.registroPonto)
                 .HasForeignKey(d => d.tipoRegistroId)
@@ -161,8 +166,7 @@ public partial class ServSeg_FacilitiesContext : DbContext
                 .HasMaxLength(100)
                 .IsUnicode(false);
             entity.Property(e => e.senha)
-                .HasMaxLength(255)
-                .HasDefaultValueSql("(0x)");
+                .HasMaxLength(255);
 
             entity.HasOne(d => d.cargo).WithMany(p => p.usuario)
                 .HasForeignKey(d => d.cargoId)
