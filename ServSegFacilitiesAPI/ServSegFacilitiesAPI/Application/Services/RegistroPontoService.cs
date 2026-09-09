@@ -137,11 +137,11 @@ namespace ServSegFacilitiesAPI.Application.Services
                     longitudeEmpresa
                 );
 
-                if (distancia > 300)
+                if (distancia > 1500)
                 {
                     throw new DomainException(
                         $"Você está fora da área permitida para registrar a Entrada. " +
-                        $"Distância até a empresa: {distancia:F2} metros. O limite é de 300 metros."
+                        $"Distância até a empresa: {distancia:F2} metros. O limite é de 1500 metros."
                     );
                 }
             }
