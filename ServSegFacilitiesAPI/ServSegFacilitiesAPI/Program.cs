@@ -22,7 +22,7 @@ System.Globalization.CultureInfo.DefaultThreadCurrentUICulture = defaultCulture;
 try { Env.Load(); } catch { }
 string connectionString = Environment.GetEnvironmentVariable("CONNECTION_STRING")
     ?? builder.Configuration.GetConnectionString("DefaultConnection")
-    ?? throw new InvalidOperationException("A Connection String não foi configurada. Defina a variável de ambiente 'CONNECTION_STRING' (no Railway ou arquivo .env local).");
+    ?? throw new InvalidOperationException("A Connection String não foi configurada. Defina a variável de ambiente 'CONNECTION_STRING'.");
 
 // Controllers + Solução para evitar loop de JSON (Ciclos de Objeto)
 builder.Services.AddControllers().AddJsonOptions(options =>
