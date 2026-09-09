@@ -106,11 +106,10 @@ app.UseCors("CorsPolicy");
 
 // Configure the HTTP request pipeline.
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
+
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+
 
 // Estava dando erro de login por conta do auto redirecionamento de protocolo https
 // Após comentar esta linha voltou a funcionar
