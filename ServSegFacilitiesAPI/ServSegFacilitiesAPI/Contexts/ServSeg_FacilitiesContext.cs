@@ -133,6 +133,9 @@ public partial class ServSeg_FacilitiesContext : DbContext
             entity.Property(e => e.dataHoraPonto)
                 .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
+            entity.Property(e => e.statusRegistroPonto)
+                .HasColumnName("statusRegistroPonto");
+
             entity.HasOne(d => d.tipoRegistro).WithMany(p => p.registroPonto)
                 .HasForeignKey(d => d.tipoRegistroId)
                 .OnDelete(DeleteBehavior.ClientSetNull)

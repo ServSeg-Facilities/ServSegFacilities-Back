@@ -1,4 +1,4 @@
-﻿-- ============================================================
+-- ============================================================
 -- SCRIPT DE CRIACAO DO BANCO POSTGRESQL (SUPABASE)
 -- SERVE-SEG FACILITIES
 -- ============================================================
@@ -66,7 +66,7 @@ CREATE TABLE "registroPonto" (
   "longitude" DOUBLE PRECISION NOT NULL,
   "dataHoraPonto" TIMESTAMP WITHOUT TIME ZONE NOT NULL DEFAULT CURRENT_TIMESTAMP,
   "fotoPonto" BYTEA,
-  "status" BOOLEAN NOT NULL DEFAULT TRUE,
+  "statusRegistroPonto" BOOLEAN NOT NULL DEFAULT TRUE,
   "tipoRegistroId" INT NOT NULL,
   "precisao" DOUBLE PRECISION NOT NULL DEFAULT 0,
 

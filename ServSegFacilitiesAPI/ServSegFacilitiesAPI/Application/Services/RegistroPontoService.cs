@@ -154,8 +154,8 @@ namespace ServSegFacilitiesAPI.Application.Services
                 longitude = dto.Longitude,
                 statusRegistroPonto = true,
                 tipoRegistroId = dto.TipoRegistroId,
+                precisao = dto.Precisao,
                 fotoPonto = ImagemParaBytes.ConverterImagem(dto.FotoPonto)
-
             };
 
             _repository.Adicionar(registro);
